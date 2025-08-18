@@ -8,27 +8,27 @@ export default function SchemaWebApp() {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          "name": "문서킹",
-          "url": "https://www.networkkings.website/",
+          "name": "ドキュメントキング",
+          "url": "https://pdfers.com/",
           "applicationCategory": "BusinessApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works on Chrome, Safari, Edge, Firefox, Mobile browsers.",
-          "description": "문서킹은 PDF, 워드, 엑셀, 이미지 등 다양한 파일을 쉽고 빠르게 변환하는 100% 무료 온라인 변환 도구입니다.",
-          "inLanguage": "ko",
+          "description": "ドキュメントキングはPDF、Word、Excel、画像など多様なファイルを簡単で高速に変換する100%無料オンライン変換ツールです。",
+          "inLanguage": "ja",
           "offers": {
             "@type": "Offer",
             "price": "0",
-            "priceCurrency": "KRW"
+            "priceCurrency": "JPY"
           },
           "author": {
             "@type": "Organization",
-            "name": "문서킹",
-            "url": "https://www.networkkings.website/"
+            "name": "ドキュメントキング",
+            "url": "https://pdfers.com/"
           },
           "publisher": {
             "@type": "Organization",
-            "name": "문서킹",
-            "url": "https://www.networkkings.website/"
+            "name": "ドキュメントキング",
+            "url": "https://pdfers.com/"
           },
           "aggregateRating": {
             "@type": "AggregateRating",
@@ -37,10 +37,10 @@ export default function SchemaWebApp() {
             "worstRating": "1",
             "ratingCount": "1200"
           },
-          "screenshot": "https://www.networkkings.website/og-image.png",
-          "email": "contact@networkkings.website",
+          "screenshot": "https://pdfers.com/og-image.png",
+          "email": "contact@pdfers.com",
           "sameAs": [
-            "https://www.networkkings.website/",
+            "https://pdfers.com/",
             // SNS, 블로그 있으면 추가
           ]
         })

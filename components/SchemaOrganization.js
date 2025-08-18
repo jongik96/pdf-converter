@@ -8,14 +8,14 @@ export default function SchemaOrganization() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "문서킹",
-            legalName: "문서킹",
-            url: "https://www.networkkings.website",
-            logo: "https://www.networkkings.website/og-image.png",
-            description: "문서킹은 PDF, 워드, 엑셀, 이미지 등 다양한 파일을 쉽고 빠르게 무료로 변환할 수 있는 국내 1등 웹서비스입니다.",
-            email: "contact@networkkings.website",
+            name: "ドキュメントキング",
+            legalName: "ドキュメントキング",
+            url: "https://pdfers.com",
+            logo: "https://pdfers.com/og-image.png",
+            description: "ドキュメントキングはPDF、Word、Excel、画像など多様なファイルを簡単で高速に無料で変換できる国内1位Webサービスです。",
+            email: "contact@pdfers.com",
             sameAs: [
-              "https://www.networkkings.website",
+              "https://pdfers.com",
               // SNS 채널이 있으면 여기에 추가
               // 예시: "https://blog.naver.com/yourblog", "https://www.instagram.com/yourbrand/"
             ],
@@ -37,12 +37,12 @@ export default function SchemaOrganization() {
             // 브랜드 또는 서비스명 여러 개 쓸 경우:
             brand: {
               "@type": "Brand",
-              name: "문서킹"
+              name: "ドキュメントキング"
             },
             // 서비스 설명 추가
             serviceArea: {
               "@type": "AdministrativeArea",
-              name: "대한민국"
+              name: "日本"
             },
             foundingDate: "2025-07",
             // 창립자(실제 법인/개인 공개 원할 때)
@@ -57,17 +57,17 @@ export default function SchemaOrganization() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            name: "문서킹",
-            url: "https://www.networkkings.website",
-            description: "문서킹은 국내 무료 문서/이미지 변환 서비스입니다. 회원가입, 설치 없이 쉽고 빠르게 파일 변환!",
-            inLanguage: "ko",
+            name: "ドキュメントキング",
+            url: "https://pdfers.com",
+            description: "ドキュメントキングは国内無料文書/画像変換サービスです。会員登録、インストールなしで簡単で高速にファイル変換！",
+            inLanguage: "ja",
             publisher: {
               "@type": "Organization",
-              name: "문서킹"
+              name: "ドキュメントキング"
             },
             potentialAction: {
               "@type": "SearchAction",
-              target: "https://www.networkkings.website/search?q={search_term_string}",
+              target: "https://pdfers.com/search?q={search_term_string}",
               "query-input": "required name=search_term_string"
             }
           })

@@ -7,31 +7,31 @@ export default function AboutPage() {
   const features = [
     {
       icon: <Zap className="w-8 h-8 text-blue-600" />,
-      title: "초고속 변환",
-      description: "최적화된 변환 엔진으로 파일을 몇 초 만에 빠르게 처리합니다.",
+      title: "超高速変換",
+      description: "最適化された変換エンジンでファイルを数秒で高速処理します。",
     },
     {
       icon: <Shield className="w-8 h-8 text-green-600" />,
-      title: "완벽한 보안",
-      description: "모든 파일은 안전하게 처리되며, 변환 완료 후 즉시 자동 삭제됩니다.",
+      title: "完璧なセキュリティ",
+      description: "すべてのファイルは安全に処理され、変換完了後すぐに自動削除されます。",
     },
     {
       icon: <CheckCircle className="w-8 h-8 text-purple-600" />,
-      title: "최고의 품질",
-      description: "문서의 원본 품질과 레이아웃을 그대로 유지합니다.",
+      title: "最高品質",
+      description: "文書の元の品質とレイアウトをそのまま維持します。",
     },
     {
       icon: <Users className="w-8 h-8 text-orange-600" />,
-      title: "누구나 쉽게",
-      description: "별다른 기술 지식 없이도 누구나 손쉽게 사용할 수 있는 직관적인 인터페이스를 제공합니다.",
+      title: "誰でも簡単に",
+      description: "特別な技術知識がなくても誰でも簡単に使用できる直感的なインターフェースを提供します。",
     },
   ]
 
   const stats = [
-    { number: "1,000만+", label: "누적 변환 파일" },
-    { number: "50만+", label: "만족한 이용자" },
-    { number: "25+", label: "지원 파일 포맷" },
-    { number: "99.9%", label: "서비스 가동률" },
+    { number: "1,000万+", label: "累計変換ファイル" },
+    { number: "50万+", label: "満足した利用者" },
+    { number: "25+", label: "対応ファイル形式" },
+    { number: "99.9%", label: "サービス稼働率" },
   ]
 
   return (
@@ -40,14 +40,14 @@ export default function AboutPage() {
       <div className="bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="container mx-auto px-4 py-16">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">문서킹 소개</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">ドキュメントキング紹介</h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                설치도, 회원가입도 필요 없습니다. 클릭 몇 번이면 끝.<br />
-                국내 대표 무료 문서 변환 사이트 문서킹.<br /><br />
+                インストールも、会員登録も不要です。クリック数回で完了。<br />
+                国内代表無料文書変換サイトドキュメントキング。<br /><br />
 
-                <strong>모든 기능 100% 무료.</strong><br />
-                써보시면 왜 다들 극찬하는지 바로 아실 겁니다.<br />
-                지금 바로 이용해보세요.
+                <strong>すべての機能100%無料。</strong><br />
+                使ってみるとなぜ皆が絶賛するかすぐに分かります。<br />
+                今すぐ利用してみてください。
               </p>
           </div>
         </div>
@@ -56,9 +56,9 @@ export default function AboutPage() {
       {/* Features Section */}
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">문서킹! 선택해야 하는 이유</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">ドキュメントキング！選ぶべき理由</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            문서킹은 안정성, 사용 편의성, 보안, 품질 모든 면에서 최고의 웹 기반 파일 변환 플랫폼을 추구합니다.
+            ドキュメントキングは安定性、使用利便性、セキュリティ、品質すべての面で最高のWebベースファイル変換プラットフォームを追求します。
           </p>
         </div>
 
@@ -78,48 +78,48 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">문서킹 이야기</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">ドキュメントキング物語</h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  문서킹은 단순한 문서 변환 사이트가 아닙니다.<br />
-                  <strong>‘왜 이렇게까지 복잡해야 하지?’</strong><br />
-                  우리는 기존의 느리고, 복잡하고, 믿을 수 없던 변환 서비스들에 불만을 품고 시작했습니다.
+                  ドキュメントキングは単純な文書変換サイトではありません。<br />
+                  <strong>'なぜこんなに複雑でなければならないのか？'</strong><br />
+                  私たちは既存の遅く、複雑で、信頼できなかった変換サービスに不満を持って始めました。
                 </p>
                 <p>
-                  개발자와 디자이너, 실사용자들이 함께 고민했습니다.<br />
-                  <strong>진짜 필요한 게 뭘까?</strong><br />
-                  어떻게 하면 누구나 빠르고 쉽게 쓸 수 있을까?
+                  開発者とデザイナー、実際のユーザーが一緒に悩みました。<br />
+                  <strong>本当に必要なものは何だろう？</strong><br />
+                  どうすれば誰でも速く簡単に使えるだろうか？
                 </p>
                 <p>
-                  그래서 결심했습니다.<br />
-                  불필요한 기능은 다 버리자.<br />
-                  정말 중요한 것들만 남기자.<br />
-                  그 결과, 누구나 직관적으로 사용할 수 있는 간결한 인터페이스가 탄생했습니다.<br />
-                  <strong>100% 한국어 안내, 모바일 환경까지 완벽하게 최적화.</strong><br />
-                  그 어떤 기기에서도, 그 어떤 연령대도, 누구나 단 몇 초면 변환할 수 있습니다.
+                  だから決心しました。<br />
+                  不要な機能はすべて捨てよう。<br />
+                  本当に重要なものだけを残そう。<br />
+                  その結果、誰でも直感的に使用できる簡潔なインターフェースが誕生しました。<br />
+                  <strong>100%日本語案内、モバイル環境まで完璧に最適化。</strong><br />
+                  どのようなデバイスでも、どのような年齢層でも、誰でも数秒で変換できます。
                 </p>
                 <p>
-                  그리고 문서킹은 해외 서비스들과 다릅니다.<br />
-                  국내 사용자만을 위한, 국내 전용 문서 변환 서비스입니다.<br />
-                  해외에 서버가 있는 서비스들과 비교해선 안 됩니다.<br />
-                  <strong>문서킹은 국내에 위치한 서버를 사용하기 때문에, 그 어떤 사이트보다 빠른 속도를 자랑합니다.</strong>
+                  そしてドキュメントキングは海外サービスとは違います。<br />
+                  国内ユーザーのみのための、国内専用文書変換サービスです。<br />
+                  海外にサーバーがあるサービスと比較してはいけません。<br />
+                  <strong>ドキュメントキングは国内に位置するサーバーを使用するため、どのサイトよりも高速な速度を誇ります。</strong>
                 </p>
                 <p>
-                  복잡한 세상에서, 단순함은 곧 경쟁력입니다.<br />
-                  문서 변환? 이제 문서킹 하나면 충분합니다.
+                  複雑な世界で、シンプルさは競争力です。<br />
+                  文書変換？今はドキュメントキング一つで十分です。
                 </p>
               </div>
             </div>
               <div
                 className="bg-gradient-to-br from-blue-100 to-indigo-200 rounded-2xl p-8 text-center">
                 <div className="text-6xl mb-4">🚀</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">문서킹 지원 확장자</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">ドキュメントキング対応拡張子</h3>
                 <p className="text-gray-700 mb-3">
-                  누구나, 어떤 환경에서도 쉽게 파일 변환을 할 수 있도록.<br />
-                  전문지식이 없어도, 기기 성능과 상관없이 최고의 품질을 제공합니다.
+                  誰でも、どのような環境でも簡単にファイル変換ができるように。<br />
+                  専門知識がなくても、デバイス性能と関係なく最高品質を提供します。
                 </p>
                 <div className="text-base font-medium text-gray-900 mt-4">
-                  <strong>지원 파일:</strong><br />
+                  <strong>対応ファイル:</strong><br />
                   PDF, DOCX, XLSX, CSV, PPTX, JPG, JPEG, PNG, WEBP, HEIC
                 </div>
               </div>
@@ -129,34 +129,34 @@ export default function AboutPage() {
         {/* Values Section */}
         <div className="mt-20">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">문서킹의 약속</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">ドキュメントキングの約束</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card>
               <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">개인정보/보안 최우선</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">個人情報/セキュリティ最優先</h3>
                 <p className="text-gray-600">
-                  여러분의 파일은 여러분의 소중한 자산입니다.<br />
-                  모든 파일은 안전하게 처리되며, 변환이 끝나면 즉시 서버에서 완전히 삭제됩니다.<br />
-                  서버 저장·추적·분석 일체 없습니다.
+                  皆様のファイルは皆様の大切な資産です。<br />
+                  すべてのファイルは安全に処理され、変換が終わるとすぐにサーバーから完全に削除されます。<br />
+                  サーバー保存・追跡・分析一切ありません。
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">완전 무료, 누구나 이용</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">完全無料、誰でも利用</h3>
                 <p className="text-gray-600">
-                  문서킹의 핵심 서비스는 앞으로도 무료로 제공됩니다.<br />
-                  누구나 부담없이 이용해보실 것을 권해드립니다.
+                  ドキュメントキングの核心サービスは今後も無料で提供されます。<br />
+                  誰でも負担なく利用してみることをお勧めします。
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">지속적 개선과 혁신</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">持続的改善と革新</h3>
                 <p className="text-gray-600">
-                  더 많은 포맷 지원, 더 빠른 속도, 더 편리한 기능을 위해 꾸준히 발전합니다.<br />
-                  이용자 의견도 언제나 환영합니다!
+                  より多くの形式対応、より高速な速度、より便利な機能のために着実に発展します。<br />
+                  利用者意見もいつでも歓迎します！
                 </p>
               </CardContent>
             </Card>
