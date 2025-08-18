@@ -15,6 +15,13 @@ const nextConfig = {
         destination: 'https://networkkings.website/:path*',
         permanent: true,
       },
+      // pdfers.com 도메인 리다이렉트 추가
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.pdfers.com' }],
+        destination: 'https://pdfers.com/:path*',
+        permanent: true,
+      },
     ]
   },
   // Vercel 최적화 설정 추가

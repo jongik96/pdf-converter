@@ -16,12 +16,12 @@ export const metadata = {
     "문서킹", "파일변환", "PDF변환", "이미지변환", "문서 변환기", "웹 변환툴", "jpg png heic pdf xlsx ppt"
   ],
   alternates: {
-    canonical: "https://www.networkkings.website/"
+    canonical: "https://pdfers.com/"
   },
   openGraph: {
     title: "문서킹 - 무료 파일 변환기",
     description: "PDF, 이미지, 문서를 쉽고 빠르게 무료 변환!",
-    url: "https://www.networkkings.website",
+    url: "https://pdfers.com",
     siteName: "문서킹",
     images: [
       {
