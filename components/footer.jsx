@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-          {/* ロゴ及び説明 */}
+          {/* 로고 및 설명 */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
               <FileText className="w-6 h-6 text-blue-400" />
@@ -18,7 +18,7 @@ export function Footer() {
             </p>
           </div>
 
-          {/* PDF編集 */}
+          {/* PDF 편집 */}
           <div>
             <h3 className="font-semibold mb-4">PDF編集</h3>
             <ul className="space-y-2 text-sm text-gray-400">
@@ -30,7 +30,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* PDF変換 */}
+          {/* PDF 변환 */}
           <div>
             <h3 className="font-semibold mb-4">PDFを変換</h3>
             <ul className="space-y-2 text-sm text-gray-400">
@@ -52,7 +52,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* 画像ツール */}
+          {/* 이미지 도구 */}
           <div>
             <h3 className="font-semibold mb-4">画像ツール</h3>
             <ul className="space-y-2 text-sm text-gray-400">

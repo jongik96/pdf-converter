@@ -11,14 +11,14 @@ const buildDownloadUrl = (id) =>
     `${API_BASE}/download/${encodeURIComponent(id)}`;
 
 
-// サポートされている変換機能/オプション定義
+  // 지원되는 변환 기능/옵션 정의
 const conversionOptions = [
-  // PDF変換
+  // PDF 변환
   { key: "pdf-to-word", label: "PDFをWordに", ext: ["pdf"], instant: true, color: "border border-blue-200 bg-white text-blue-700 hover:bg-blue-50 shadow-sm" },
   { key: "pdf-to-image", label: "PDFを画像に", ext: ["pdf"], instant: true, color: "border border-yellow-200 bg-white text-yellow-700 hover:bg-yellow-50 shadow-sm" },
   { key: "pdf-to-excel", label: "PDFをExcelに", ext: ["pdf"], instant: false, color: "border border-green-200 bg-white text-green-700 hover:bg-green-50 shadow-sm" },
   { key: "pdf-to-ppt", label: "PDFをPowerPointに", ext: ["pdf"], instant: true, color: "border border-orange-200 bg-white text-orange-700 hover:bg-orange-50 shadow-sm" },
-  // PDF編集(すべて同じ)
+  // PDF 편집(모두 동일하게)
   { key: "pdf-merge", label: "PDF結合", ext: ["pdf"], multi: true, instant: true, color: "border border-red-200 bg-white text-red-700 hover:bg-red-50 shadow-sm" },  
   { key: "pdf-split", label: "PDF分割", ext: ["pdf"], instant: false, color: "border border-red-200 bg-white text-red-700 hover:bg-red-50 shadow-sm" },
   { key: "pdf-extract", label: "PDFページ抽出", ext: ["pdf"], instant: false, color: "border border-red-200 bg-white text-red-700 hover:bg-red-50 shadow-sm" },
@@ -33,11 +33,11 @@ const conversionOptions = [
   { key: "png-to-webp", label: "PNGをWEBPに", ext: ["png"], instant: true, color: "border border-blue-200 bg-white text-blue-700 hover:bg-orange-50 shadow-sm" },
   { key: "heic-to-jpg", label: "HEICをJPGに", ext: ["heic"], instant: true, color: "border border-green-300 bg-white text-green-800 hover:bg-green-50 shadow-sm" },
 
-  // 画像オプション型 (トススタイル、中立/中性色)
+  // 이미지 옵션형 (토스 스타일, 중립/중성색)
   { key: "image-compress", label: "画像容量削減", ext: ["jpg", "jpeg", "png"], instant: false, color: "border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 shadow-sm" },
   { key: "image-resize", label: "画像サイズ変更", ext: ["jpg", "jpeg", "png"], instant: false, color: "border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 shadow-sm" },
 
-  // その他オフィス文書変換 (Word/Excel/PowerPoint系列色適用)
+  // 기타 오피스 문서 변환 (워드/엑셀/파워포인트 계열색 적용)
   { key: "word-to-pdf", label: "WordをPDFに", ext: ["docx"], instant: true, color: "border border-blue-300 bg-white text-blue-800 hover:bg-blue-50 shadow-sm" },
   { key: "excel-to-pdf", label: "ExcelをPDFに", ext: ["xlsx", "csv"], instant: true, color: "border border-green-300 bg-white text-green-800 hover:bg-green-50 shadow-sm" },
   { key: "ppt-to-pdf", label: "PowerPointをPDFに", ext: ["ppt", "pptx"], instant: true, color: "border border-orange-300 bg-white text-orange-800 hover:bg-orange-50 shadow-sm" },
@@ -62,22 +62,22 @@ function getAvailableConversions(files) {
   const firstExt = getExt(files[0].name);
   const allSameExt = files.every(f => getExt(f.name) === firstExt);
 
-  // 2個以上PDF選択時、PDF結合のみ表示
+  // 2개 이상 PDF만 선택시 PDF 합치기만 노출
   if (files.length > 1 && allSameExt && firstExt === "pdf") {
-    // PDF結合のみ表示
+    // PDF 합치기만 보여줌
     return conversionOptions.filter(opt => opt.key === "pdf-merge");
   }
 
-  // 2個以上画像(拡張子混合も許可)の場合、image-to-pdfのみ表示
+  // 2개 이상 이미지(확장자 혼합도 허용)면 image-to-pdf만 노출
   if (files.length > 1 && isAllImages(files)) {
     return conversionOptions.filter(opt => opt.key === "image-to-pdf");
   }  
 
-  // 複数ファイルだがPDFでないか拡張子が異なる場合は何も表示しない
+  // 여러 파일이지만 PDF 아니거나 확장자 다르면 아무것도 안 보임
   if (files.length > 1) {
     return [];
   }
-  // 1個ファイルの場合は従来通りすべてのオプション
+  // 1개 파일이면 기존처럼 모든 옵션
   return conversionOptions.filter(opt => opt.ext.includes(firstExt));
 }
 
@@ -90,15 +90,15 @@ export default function WizardClient() {
   const [excelFormat, setExcelFormat] = useState("xlsx");
   const [imgSize, setImgSize] = useState("1024");
   const [imgQuality, setImgQuality] = useState(80);
-  const [pdfCompressQuality, setPdfCompressQuality] = useState("ebook"); // デフォルト値: 一般
+  const [pdfCompressQuality, setPdfCompressQuality] = useState("ebook"); // 기본값: 일반
   const [splitRange, setSplitRange] = useState("");
-  const [extractRange, setExtractRange] = useState(""); // 抽出ページ入力値状態
+  const [extractRange, setExtractRange] = useState(""); // 추출 페이지 입력값 상태
   const [removeRange, setRemoveRange] = useState("");
   const [dragActive, setDragActive] = useState(false);  
 
 
 
-  // ファイル選択
+  // 파일 선택
   const handleFileChange = e => {
     setFiles(Array.from(e.target.files));
     setResultUrl(null);
@@ -203,11 +203,11 @@ export default function WizardClient() {
     }
     if (optionTool === "pdf-compress") {
       endpoint = "https://api.pdfers.com/convert/pdf-compress";
-      formData.append("quality", pdfCompressQuality); // <== ラジオで選択した値!
+      formData.append("quality", pdfCompressQuality); // <== 라디오에서 선택한 값!
     }
     if (optionTool === "pdf-split") {
       endpoint = "https://api.pdfers.com/convert/pdf-split";
-      formData.append("ranges", splitRange); // バックエンドが"ranges"で受け取る
+      formData.append("ranges", splitRange); // 백엔드가 "ranges"로 받을 것
     }
     if (optionTool === "pdf-extract") {
       endpoint = "https://api.pdfers.com/convert/pdf-extract";
@@ -215,7 +215,7 @@ export default function WizardClient() {
     }
     if (optionTool === "pdf-remove") {
       endpoint = "https://api.pdfers.com/convert/pdf-remove";
-      formData.append("pages", removeRange); // "ranges"で統一!
+      formData.append("pages", removeRange); // "ranges"로 통일!
     }        
 
     const res = await fetch(endpoint, { method: "POST", body: formData });
@@ -308,13 +308,13 @@ export default function WizardClient() {
           </Script>
         </div>
       )}
-      {/* 👆👆 ここ！ 👆👆 */}
-      {/* 変換ボタン/オプション */}
+      {/* 👆👆 여기! 👆👆 */}
+      {/* 변환 버튼/옵션 */}
       <div className="w-full max-w-2xl">
         <Card>
           <CardContent className="p-8">
-            {files.length === 0 && <p className="text-center text-gray-400">ファイルを先にアップロードしてください。</p>}
-            {/* 変換機能ボタン自動表示 */}
+            {files.length === 0 && <p className="text-center text-gray-400">파일을 먼저 업로드 해주세요.</p>}
+            {/* 변환 기능 버튼 자동 표시 */}
             {files.length > 0 && (
               <>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -484,7 +484,7 @@ export default function WizardClient() {
               </div>
             )}
 
-            {/* 結果ダウンロード */}
+            {/* 결과 다운로드 */}
             {resultUrl && (
               <div className="mt-8 flex flex-col items-center">
                 <p className="mb-2 text-green-600 font-bold">変換完了！ファイルをダウンロードしてください。</p>

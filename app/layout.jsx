@@ -10,34 +10,34 @@ import SchemaWebApp from "@/components/SchemaWebApp";
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "문서킹 - 무료 파일 변환기",
-  description: "문서킹에서 PDF, 워드, 엑셀, 파워포인트, 이미지 파일을 쉽고 빠르게 무료로 변환하세요. 설치·회원가입 없이 완전 무료! 국내 서버를 운용하기 때문에 어느 곳 보다 빠른 속도를 누릴 수 있습니다!",
+  title: "ドキュメントキング - 無料ファイル変換機",
+  description: "ドキュメントキングでPDF、Word、Excel、PowerPoint、画像ファイルを簡単で高速に無料で変換してください。インストール・会員登録なしで完全無料！国内サーバーを運営しているため、どこよりも高速な速度を楽しめます！",
   keywords: [
-    "문서킹", "파일변환", "PDF변환", "이미지변환", "문서 변환기", "웹 변환툴", "jpg png heic pdf xlsx ppt"
+    "ドキュメントキング", "ファイル変換", "PDF変換", "画像変換", "文書変換機", "ウェブ変換ツール", "jpg png heic pdf xlsx ppt"
   ],
   alternates: {
     canonical: "https://pdfers.com/"
   },
   openGraph: {
-    title: "문서킹 - 무료 파일 변환기",
-    description: "PDF, 이미지, 문서를 쉽고 빠르게 무료 변환!",
+    title: "ドキュメントキング - 無料ファイル変換機",
+    description: "PDF、画像、文書を簡単で高速に無料変換！",
     url: "https://pdfers.com",
-    siteName: "문서킹",
+    siteName: "ドキュメントキング",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "문서킹 메인 이미지",
+        alt: "ドキュメントキングメイン画像",
       },
     ],
-    locale: "ko_KR",
+    locale: "ja_JP",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "문서킹 - 무료 파일 변환기",
-    description: "PDF, 이미지, 문서를 쉽고 빠르게 무료 변환!",
+    title: "ドキュメントキング - 無料ファイル変換機",
+    description: "PDF、画像、文書を簡単で高速に無料変換！",
     images: ["/og-image.png"],
   },
   icons: {

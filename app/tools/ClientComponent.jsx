@@ -96,10 +96,10 @@ export default function ToolsPage() {
       <div className="container mx-auto px-4 py-16">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">문서킹의 모든 도구 모음</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            PDF 변환, 워드 변환, 엑셀 변환, 이미지 변환 등 모든 파일 변환을 한 번에! 빠르고 안전하며, 100% 무료 파일 변환 도구로 지금 바로 변환을 시작해보세요.
-          </p>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">ドキュメントキングのすべてのツール集</h1>
+                      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              PDF変換、Word変換、Excel変換、画像変換などすべてのファイル変換を一度に！高速で安全、100%無料ファイル変換ツールで今すぐ変換を始めてみてください。
+            </p>
         </div>
 
         {/* Tool Categories */}

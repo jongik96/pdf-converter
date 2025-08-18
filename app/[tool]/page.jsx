@@ -2,210 +2,210 @@ import ClientComponent from "./ClientComponent";
 export async function generateMetadata({ params }) {
   const metadataMap = {
     "pdf-to-word": {
-      title: "PDF를 워드로 변환 - 문서킹",
-      description: "PDF 파일을 DOCX 워드 파일로 무료 변환! 온라인에서 쉽고 빠르게 변환하세요.",
-      keywords: "PDF 워드 변환, PDF DOCX 변환, 무료 PDF 변환, 문서킹",
+      title: "PDFをWordに変換 - ドキュメントキング",
+      description: "PDFファイルをDOCX Wordファイルに無料変換！オンラインで簡単で高速に変換してください。",
+      keywords: "PDF Word変換, PDF DOCX変換, 無料PDF変換, ドキュメントキング",
       alternates: {
-        canonical: "https://www.networkkings.website/pdf-to-word",
+        canonical: "https://pdfers.com/pdf-to-word",
       },
       openGraph: {
-        title: "PDF를 워드로 변환 - 문서킹",
-        description: "PDF 파일을 DOCX 워드 파일로 무료 변환! 온라인에서 쉽고 빠르게 변환하세요.",
-        url: "https://www.networkkings.website/pdf-to-word",
+        title: "PDFをWordに変換 - ドキュメントキング",
+        description: "PDFファイルをDOCX Wordファイルに無料変換！オンラインで簡単で高速に変換してください。",
+        url: "https://pdfers.com/pdf-to-word",
         images: [
-          { url: "/og-image.png", width: 1200, height: 630, alt: "PDF를 워드로 변환" }
+          { url: "/og-image.png", width: 1200, height: 630, alt: "PDFをWordに変換" }
         ]
       }
     },
     "pdf-to-image": {
-      title: "PDF를 이미지로 변환 - 문서킹",
-      description: "PDF 파일을 JPG/PNG 이미지로 변환! 한 번에 여러 페이지 변환 가능.",
-      keywords: "PDF 이미지 변환, PDF JPG, PDF PNG, 무료 PDF 변환, 문서킹",
+      title: "PDFを画像に変換 - ドキュメントキング",
+      description: "PDFファイルをJPG/PNG画像に変換！一度に複数ページ変換可能。",
+      keywords: "PDF画像変換, PDF JPG, PDF PNG, 無料PDF変換, ドキュメントキング",
       alternates: {
-        canonical: "https://www.networkkings.website/pdf-to-image",
+        canonical: "https://pdfers.com/pdf-to-image",
       },
       openGraph: {
-        title: "PDF를 이미지로 변환 - 문서킹",
-        description: "PDF 파일을 JPG/PNG 이미지로 변환! 한 번에 여러 페이지 변환 가능.",
-        url: "https://www.networkkings.website/pdf-to-image",
+        title: "PDFを画像に変換 - ドキュメントキング",
+        description: "PDFファイルをJPG/PNG画像に変換！一度に複数ページ変換可能。",
+        url: "https://pdfers.com/pdf-to-image",
         images: [
-          { url: "/og-image.png", width: 1200, height: 630, alt: "PDF를 이미지로 변환" }
+          { url: "/og-image.png", width: 1200, height: 630, alt: "PDFを画像に変換" }
         ]
       }
     },
     "pdf-to-excel": {
-      title: "PDF를 엑셀로 변환 - 문서킹",
-      description: "PDF 파일을 XLSX/CSV 엑셀 파일로 무료 변환! 표/리스트 추출에 최적화.",
-      keywords: "PDF 엑셀 변환, PDF XLSX, PDF CSV, 무료 PDF 변환, 문서킹",
+      title: "PDFをExcelに変換 - ドキュメントキング",
+      description: "PDFファイルをXLSX/CSV Excelファイルに無料変換！表/リスト抽出に最適化。",
+      keywords: "PDF Excel変換, PDF XLSX, PDF CSV, 無料PDF変換, ドキュメントキング",
       alternates: {
-        canonical: "https://www.networkkings.website/pdf-to-excel",
+        canonical: "https://pdfers.com/pdf-to-excel",
       },
       openGraph: {
-        title: "PDF를 엑셀로 변환 - 문서킹",
-        description: "PDF 파일을 XLSX/CSV 엑셀 파일로 무료 변환! 표/리스트 추출에 최적화.",
-        url: "https://www.networkkings.website/pdf-to-excel",
+        title: "PDFをExcelに変換 - ドキュメントキング",
+        description: "PDFファイルをXLSX/CSV Excelファイルに無料変換！表/リスト抽出に最適化。",
+        url: "https://pdfers.com/pdf-to-excel",
         images: [
-          { url: "/og-image.png", width: 1200, height: 630, alt: "PDF를 엑셀로 변환" }
+          { url: "/og-image.png", width: 1200, height: 630, alt: "PDFをExcelに変換" }
         ]
       }
     },
     "pdf-to-ppt": {
-      title: "PDF를 파워포인트로 변환 - 문서킹",
-      description: "PDF 파일을 PPTX 파워포인트 파일로 무료 변환! 프레젠테이션 제작을 빠르게.",
-      keywords: "PDF PPT 변환, PDF PPTX, PDF 파워포인트, 무료 PDF 변환, 문서킹",
+      title: "PDFをPowerPointに変換 - ドキュメントキング",
+      description: "PDFファイルをPPTX PowerPointファイルに無料変換！プレゼンテーション制作を高速化。",
+      keywords: "PDF PPT変換, PDF PPTX, PDF PowerPoint, 無料PDF変換, ドキュメントキング",
       alternates: {
-        canonical: "https://www.networkkings.website/pdf-to-ppt",
+        canonical: "https://pdfers.com/pdf-to-ppt",
       },
       openGraph: {
-        title: "PDF를 파워포인트로 변환 - 문서킹",
-        description: "PDF 파일을 PPTX 파워포인트 파일로 무료 변환! 프레젠테이션 제작을 빠르게.",
-        url: "https://www.networkkings.website/pdf-to-ppt",
+        title: "PDFをPowerPointに変換 - ドキュメントキング",
+        description: "PDFファイルをPPTX PowerPointファイルに無料変換！プレゼンテーション制作を高速化。",
+        url: "https://pdfers.com/pdf-to-ppt",
         images: [
-          { url: "/og-image.png", width: 1200, height: 630, alt: "PDF를 파워포인트로 변환" }
+          { url: "/og-image.png", width: 1200, height: 630, alt: "PDFをPowerPointに変換" }
         ]
       }
     },
     "word-to-pdf": {
-      title: "워드를 PDF로 변환 - 문서킹",
-      description: "Word(.docx) 파일을 PDF로 무료 변환! 인쇄/공유에 최적화된 포맷 제공.",
-      keywords: "워드 PDF 변환, DOCX PDF, 무료 워드 변환, 문서킹",
+      title: "WordをPDFに変換 - ドキュメントキング",
+      description: "Word(.docx)ファイルをPDFに無料変換！印刷/共有に最適化されたフォーマット提供。",
+      keywords: "Word PDF変換, DOCX PDF, 無料Word変換, ドキュメントキング",
       alternates: {
-        canonical: "https://www.networkkings.website/word-to-pdf",
+        canonical: "https://pdfers.com/word-to-pdf",
       },
       openGraph: {
-        title: "워드를 PDF로 변환 - 문서킹",
-        description: "Word(.docx) 파일을 PDF로 무료 변환! 인쇄/공유에 최적화된 포맷 제공.",
-        url: "https://www.networkkings.website/word-to-pdf",
+        title: "WordをPDFに変換 - ドキュメントキング",
+        description: "Word(.docx)ファイルをPDFに無料変換！印刷/共有に最適化されたフォーマット提供。",
+        url: "https://pdfers.com/word-to-pdf",
         images: [
-          { url: "/og-image.png", width: 1200, height: 630, alt: "워드를 PDF로 변환" }
+          { url: "/og-image.png", width: 1200, height: 630, alt: "WordをPDFに変換" }
         ]
       }
     },
     "image-to-pdf": {
-      title: "이미지를 PDF로 변환 - 문서킹",
-      description: "여러 장의 이미지를 하나의 PDF로 합치기! JPG, PNG 등 다양한 이미지 지원.",
-      keywords: "이미지 PDF 변환, JPG PDF, PNG PDF, 이미지 합치기, 무료 변환, 문서킹",
+      title: "画像をPDFに変換 - ドキュメントキング",
+      description: "複数枚の画像を1つのPDFに結合！JPG、PNGなど多様な画像対応。",
+      keywords: "画像PDF変換, JPG PDF, PNG PDF, 画像結合, 無料変換, ドキュメントキング",
       alternates: {
-        canonical: "https://www.networkkings.website/image-to-pdf",
+        canonical: "https://pdfers.com/image-to-pdf",
       },
       openGraph: {
-        title: "이미지를 PDF로 변환 - 문서킹",
-        description: "여러 장의 이미지를 하나의 PDF로 합치기! JPG, PNG 등 다양한 이미지 지원.",
-        url: "https://www.networkkings.website/image-to-pdf",
+        title: "画像をPDFに変換 - ドキュメントキング",
+        description: "複数枚の画像を1つのPDFに結合！JPG、PNGなど多様な画像対応。",
+        url: "https://pdfers.com/image-to-pdf",
         images: [
-          { url: "/og-image.png", width: 1200, height: 630, alt: "이미지를 PDF로 변환" }
+          { url: "/og-image.png", width: 1200, height: 630, alt: "画像をPDFに変換" }
         ]
       }
     },
     "excel-to-pdf": {
-      title: "엑셀을 PDF로 변환 - 문서킹",
-      description: "엑셀(xlsx, csv) 파일을 PDF로 무료 변환! 인쇄/제출용으로 손쉽게 변환.",
-      keywords: "엑셀 PDF 변환, XLSX PDF, CSV PDF, 무료 엑셀 변환, 문서킹",
+      title: "ExcelをPDFに変換 - ドキュメントキング",
+      description: "Excel(xlsx, csv)ファイルをPDFに無料変換！印刷/提出用に簡単に変換。",
+      keywords: "Excel PDF変換, XLSX PDF, CSV PDF, 無料Excel変換, ドキュメントキング",
       alternates: {
-        canonical: "https://www.networkkings.website/excel-to-pdf",
+        canonical: "https://pdfers.com/excel-to-pdf",
       },
       openGraph: {
-        title: "엑셀을 PDF로 변환 - 문서킹",
-        description: "엑셀(xlsx, csv) 파일을 PDF로 무료 변환! 인쇄/제출용으로 손쉽게 변환.",
-        url: "https://www.networkkings.website/excel-to-pdf",
+        title: "ExcelをPDFに変換 - ドキュメントキング",
+        description: "Excel(xlsx, csv)ファイルをPDFに無料変換！印刷/提出用に簡単に変換。",
+        url: "https://pdfers.com/excel-to-pdf",
         images: [
-          { url: "/og-image.png", width: 1200, height: 630, alt: "엑셀을 PDF로 변환" }
+          { url: "/og-image.png", width: 1200, height: 630, alt: "ExcelをPDFに変換" }
         ]
       }
     },
     "ppt-to-pdf": {
-      title: "파워포인트를 PDF로 변환 - 문서킹",
-      description: "파워포인트(PPT, PPTX)를 PDF 문서로 무료 변환! 프레젠테이션 파일도 쉽게 인쇄.",
-      keywords: "파워포인트 PDF 변환, PPT PDF, PPTX PDF, 무료 파워포인트 변환, 문서킹",
+      title: "PowerPointをPDFに変換 - ドキュメントキング",
+      description: "PowerPoint(PPT, PPTX)をPDF文書に無料変換！プレゼンテーションファイルも簡単に印刷。",
+      keywords: "PowerPoint PDF変換, PPT PDF, PPTX PDF, 無料PowerPoint変換, ドキュメントキング",
       alternates: {
-        canonical: "https://www.networkkings.website/ppt-to-pdf",
+        canonical: "https://pdfers.com/ppt-to-pdf",
       },
       openGraph: {
-        title: "파워포인트를 PDF로 변환 - 문서킹",
-        description: "파워포인트(PPT, PPTX)를 PDF 문서로 무료 변환! 프레젠테이션 파일도 쉽게 인쇄.",
-        url: "https://www.networkkings.website/ppt-to-pdf",
+        title: "PowerPointをPDFに変換 - ドキュメントキング",
+        description: "PowerPoint(PPT, PPTX)をPDF文書に無料変換！プレゼンテーションファイルも簡単に印刷。",
+        url: "https://pdfers.com/ppt-to-pdf",
         images: [
-          { url: "/og-image.png", width: 1200, height: 630, alt: "파워포인트를 PDF로 변환" }
+          { url: "/og-image.png", width: 1200, height: 630, alt: "PowerPointをPDFに変換" }
         ]
       }
     },
     "jpg-to-png": {
-      title: "JPG를 PNG로 변환 - 문서킹",
-      description: "JPG 이미지를 고화질 PNG로 무료 변환! 간편하게 이미지 포맷 변환 가능.",
-      keywords: "JPG PNG 변환, 이미지 포맷 변환, 무료 JPG 변환, 문서킹",
+      title: "JPGをPNGに変換 - ドキュメントキング",
+      description: "JPG画像を高画質PNGに無料変換！簡単に画像形式変換可能。",
+      keywords: "JPG PNG変換, 画像形式変換, 無料JPG変換, ドキュメントキング",
       alternates: {
-        canonical: "https://www.networkkings.website/jpg-to-png",
+        canonical: "https://pdfers.com/jpg-to-png",
       },
       openGraph: {
-        title: "JPG를 PNG로 변환 - 문서킹",
-        description: "JPG 이미지를 고화질 PNG로 무료 변환! 간편하게 이미지 포맷 변환 가능.",
-        url: "https://www.networkkings.website/jpg-to-png",
+        title: "JPGをPNGに変換 - ドキュメントキング",
+        description: "JPG画像を高画質PNGに無料変換！簡単に画像形式変換可能。",
+        url: "https://pdfers.com/jpg-to-png",
         images: [
-          { url: "/og-image.png", width: 1200, height: 630, alt: "JPG를 PNG로 변환" }
+          { url: "/og-image.png", width: 1200, height: 630, alt: "JPGをPNGに変換" }
         ]
       }
     },
     "png-to-jpg": {
-      title: "PNG를 JPG로 변환 - 문서킹",
-      description: "PNG 이미지를 고화질 JPG로 무료 변환! 사진, 스크린샷 포맷 변환도 손쉽게.",
-      keywords: "PNG JPG 변환, 이미지 포맷 변환, 무료 PNG 변환, 문서킹",
+      title: "PNGをJPGに変換 - ドキュメントキング",
+      description: "PNG画像を高画質JPGに無料変換！写真、スクリーンショット形式変換も簡単に。",
+      keywords: "PNG JPG変換, 画像形式変換, 無料PNG変換, ドキュメントキング",
       alternates: {
-        canonical: "https://www.networkkings.website/png-to-jpg",
+        canonical: "https://pdfers.com/png-to-jpg",
       },
       openGraph: {
-        title: "PNG를 JPG로 변환 - 문서킹",
-        description: "PNG 이미지를 고화질 JPG로 무료 변환! 사진, 스크린샷 포맷 변환도 손쉽게.",
-        url: "https://www.networkkings.website/png-to-jpg",
+        title: "PNGをJPGに変換 - ドキュメントキング",
+        description: "PNG画像を高画質JPGに無料変換！写真、スクリーンショット形式変換も簡単に。",
+        url: "https://pdfers.com/png-to-jpg",
         images: [
-          { url: "/og-image.png", width: 1200, height: 630, alt: "PNG를 JPG로 변환" }
+          { url: "/og-image.png", width: 1200, height: 630, alt: "PNGをJPGに変換" }
         ]
       }
     },
     "heic-to-jpg": {
-      title: "HEIC를 JPG로 변환 - 문서킹",
-      description: "HEIC 이미지를 JPG로 변환! 아이폰 사진 호환성 문제를 한방에 해결.",
-      keywords: "HEIC JPG 변환, 아이폰 사진 변환, 무료 HEIC 변환, 문서킹",
+      title: "HEICをJPGに変換 - ドキュメントキング",
+      description: "HEIC画像をJPGに変換！iPhone写真互換性問題を一発で解決。",
+      keywords: "HEIC JPG変換, iPhone写真変換, 無料HEIC変換, ドキュメントキング",
       alternates: {
-        canonical: "https://www.networkkings.website/heic-to-jpg",
+        canonical: "https://pdfers.com/heic-to-jpg",
       },
       openGraph: {
-        title: "HEIC를 JPG로 변환 - 문서킹",
-        description: "HEIC 이미지를 JPG로 변환! 아이폰 사진 호환성 문제를 한방에 해결.",
-        url: "https://www.networkkings.website/heic-to-jpg",
+        title: "HEICをJPGに変換 - ドキュメントキング",
+        description: "HEIC画像をJPGに変換！iPhone写真互換性問題を一発で解決。",
+        url: "https://pdfers.com/heic-to-jpg",
         images: [
-          { url: "/og-image.png", width: 1200, height: 630, alt: "HEIC를 JPG로 변환" }
+          { url: "/og-image.png", width: 1200, height: 630, alt: "HEICをJPGに変換" }
         ]
       }
     },
     "jpg-to-webp": {
-      title: "JPG를 WEBP로 변환 - 문서킹",
-      description: "JPG 이미지를 웹 최적화 WEBP 포맷으로 무료 변환! 이미지 압축까지 한 번에.",
-      keywords: "JPG WEBP 변환, 이미지 압축, 웹 최적화 이미지, 무료 변환, 문서킹",
+      title: "JPGをWEBPに変換 - ドキュメントキング",
+      description: "JPG画像をWeb最適化WEBP形式に無料変換！画像圧縮まで一度に。",
+      keywords: "JPG WEBP変換, 画像圧縮, Web最適化画像, 無料変換, ドキュメントキング",
       alternates: {
-        canonical: "https://www.networkkings.website/jpg-to-webp",
+        canonical: "https://pdfers.com/jpg-to-webp",
       },
       openGraph: {
-        title: "JPG를 WEBP로 변환 - 문서킹",
-        description: "JPG 이미지를 웹 최적화 WEBP 포맷으로 무료 변환! 이미지 압축까지 한 번에.",
-        url: "https://www.networkkings.website/jpg-to-webp",
+        title: "JPGをWEBPに変換 - ドキュメントキング",
+        description: "JPG画像をWeb最適化WEBP形式に無料変換！画像圧縮まで一度に。",
+        url: "https://pdfers.com/jpg-to-webp",
         images: [
-          { url: "/og-image.png", width: 1200, height: 630, alt: "JPG를 WEBP로 변환" }
+          { url: "/og-image.png", width: 1200, height: 630, alt: "JPGをWEBPに変換" }
         ]
       }
     },
     "png-to-webp": {
-      title: "PNG를 WEBP로 변환 - 문서킹",
-      description: "PNG 이미지를 WEBP 포맷으로 무료 변환! 이미지 품질은 유지, 용량은 줄이기.",
-      keywords: "PNG WEBP 변환, 이미지 압축, 웹 최적화 이미지, 무료 변환, 문서킹",
+      title: "PNGをWEBPに変換 - ドキュメントキング",
+      description: "PNG画像をWEBP形式に無料変換！画像品質は維持、容量は削減。",
+      keywords: "PNG WEBP変換, 画像圧縮, Web最適化画像, 無料変換, ドキュメントキング",
       alternates: {
-        canonical: "https://www.networkkings.website/png-to-webp",
+        canonical: "https://pdfers.com/png-to-webp",
       },
       openGraph: {
-        title: "PNG를 WEBP로 변환 - 문서킹",
-        description: "PNG 이미지를 WEBP 포맷으로 무료 변환! 이미지 품질은 유지, 용량은 줄이기.",
-        url: "https://www.networkkings.website/png-to-webp",
+        title: "PNGをWEBPに変換 - ドキュメントキング",
+        description: "PNG画像をWEBP形式に無料変換！画像品質は維持、容量は削減。",
+        url: "https://pdfers.com/png-to-webp",
         images: [
-          { url: "/og-image.png", width: 1200, height: 630, alt: "PNG를 WEBP로 변환" }
+          { url: "/og-image.png", width: 1200, height: 630, alt: "PNGをWEBPに変換" }
         ]
       }
     }
@@ -214,10 +214,10 @@ export async function generateMetadata({ params }) {
   const meta = metadataMap[params.tool];
   if (!meta) {
     return {
-      title: "문서킹 - 무료 문서/이미지 변환 사이트",
-      description: "PDF, 이미지, 오피스 파일을 쉽고 빠르게 변환하세요.",
+      title: "ドキュメントキング - 無料文書/画像変換サイト",
+      description: "PDF、画像、オフィスファイルを簡単で高速に変換してください。",
       alternates: {
-        canonical: "https://www.networkkings.website/"
+        canonical: "https://pdfers.com/"
       }
     };
   }

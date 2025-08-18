@@ -16,7 +16,7 @@ export default function Page() {
         <section className="w-full flex flex-col items-center mt-16 px-2">
         <h2 className="text-2xl font-bold text-center mb-8">利用方法 – 2ステップで完了！</h2>
         <div className="w-full max-w-3xl flex flex-col gap-7">
-            {/* 1ステップ */}
+            {/* 1단계 */}
             <div className="flex flex-col items-center bg-white/95 p-10 rounded-3xl shadow-lg border hover:shadow-2xl transition">
             <img src="/images/home_step1.gif" alt="ファイルアップロード" loading="lazy" className="w-full h-44 md:h-56 rounded-2xl border mb-5 object-cover" />
             <h3 className="font-bold text-blue-700 mb-2 text-xl md:text-2xl">1. ファイルアップロード</h3>
@@ -24,7 +24,7 @@ export default function Page() {
                 変換したいファイルを<b>クリックまたはドラッグ</b>してアップロードしてください。
             </p>
             </div>
-            {/* 2ステップ */}
+            {/* 2단계 */}
             <div className="flex flex-col items-center bg-white/95 p-10 rounded-3xl shadow-lg border hover:shadow-2xl transition">
             <img src="/images/home_step2.gif" alt="ツール選択" loading="lazy" className="w-full h-44 md:h-56 rounded-2xl border mb-5 object-cover" />
             <h3 className="font-bold text-blue-700 mb-2 text-xl md:text-2xl">2. ツール選択</h3>
@@ -36,7 +36,7 @@ export default function Page() {
         </div>
         </section>
 
-      {/* 特徴及び信頼/FAQ – FAQデザイン改善 */}
+      {/* 특징 및 신뢰/FAQ – FAQ 디자인 개선 */}
       <section className="max-w-3xl mx-auto mt-16 mb-28 px-4">
         <h2 className="text-xl font-bold mb-6 text-blue-800 text-center">ドキュメントキングが特別な理由</h2>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700 mb-10">
@@ -104,7 +104,7 @@ export default function Page() {
         <SchemaFAQ />
       </section>
 
-      {/* CTAバナー */}
+      {/* CTA 배너 */}
       <div className="w-full bg-gradient-to-r from-blue-200 to-indigo-200 py-10 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">いつでも無料で変換してください！</h2>
         <a href="#wizard" className="inline-block px-10 py-4 bg-blue-700 text-white rounded-2xl font-semibold shadow hover:bg-blue-800 transition text-lg">

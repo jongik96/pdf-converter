@@ -66,12 +66,12 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState({})
   const dropdownRefs = useRef({})
 
-  // メニュー中央揃え、サイズ拡大 (Tailwindでw-full flex justify-centerなど)
-  // デスクトップドロップダウン - hover+focus維持、ドロップダウン上にマウスがある時閉じない
+  // 메뉴 중앙 정렬, 크기 키우기 (Tailwind로 w-full flex justify-center 등)
+  // 데스크탑 드롭다운 - hover+focus 유지, 드롭다운 위 마우스 있을 때 닫히지 않게
   const handleDropdown = (idx) => setOpenDropdown(idx)
   const handleDropdownLeave = (idx) => {
     setTimeout(() => {
-      // ドロップダウン内部にもマウスがある場合は閉じない
+      // 드롭다운 내부에도 마우스 있으면 닫지 않음
       if (dropdownRefs.current[idx] && dropdownRefs.current[idx].matches(":hover")) return
       setOpenDropdown(null)
     }, 80)
@@ -117,13 +117,13 @@ export function Header() {
     <header className="bg-white shadow-sm border-b sticky top-0 z-30">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* ロゴ */}
+          {/* Logo */}
           <a href="/" className="flex items-center space-x-2">
             <FileText className="w-9 h-9 text-blue-600" />
             <span className="text-2xl font-bold text-gray-900">ドキュメントキング</span>
           </a>
 
-          {/* デスクトップナビゲーション (中央揃え) */}
+          {/* Desktop Navigation (중앙 정렬) */}
           <nav className="hidden md:flex flex-1 justify-center items-center gap-10">
             {menu.map((item, idx) =>
               !item.children ? (
@@ -185,7 +185,7 @@ export function Header() {
             )}
           </nav>
 
-          {/* モバイルメニューボタン */}
+          {/* Mobile Menu Button */}
           <Button
             variant="ghost"
             size="icon"
@@ -195,19 +195,19 @@ export function Header() {
           </Button>
         </div>
 
-        {/* モバイルナビゲーション (アコーディオン) */}
+        {/* Mobile Navigation (아코디언) */}
         {isMobileMenuOpen && (
           <div
             ref={mobileMenuRef}
             className="md:hidden py-4 border-t fixed inset-0 z-40 bg-white overflow-y-auto"
             style={{ maxHeight: "100vh" }}
           >
-            {/* 最上段右側X(閉じる)ボタン追加 */}
+            {/* 최상단 오른쪽 X(닫기) 버튼 추가 */}
             <div className="flex justify-end px-4 mb-2">
               <Button
                 variant="ghost"
                 size="icon"
-                aria-label="閉じる"
+                aria-label="닫기"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <X className="w-7 h-7" />
@@ -241,7 +241,7 @@ export function Header() {
                     {mobileOpen[idx] && (
                       <div
                         className="pl-2 pt-1 flex flex-col space-y-1 max-h-80 overflow-y-auto"
-                        style={{ WebkitOverflowScrolling: "touch" }} // iOSスムーズスクロール
+                        style={{ WebkitOverflowScrolling: "touch" }} // iOS 부드러운 스크롤
                       >
                         {item.children.map((sub) => (
                           <Link
