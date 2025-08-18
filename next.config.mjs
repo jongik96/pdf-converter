@@ -6,18 +6,7 @@ const nextConfig = {
     optimizeCss: true,
   },
   output: 'standalone',
-  // trailingSlash: true,  // Vercel에서는 제거
-  async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'www.networkkings.website' }],
-        destination: 'https://networkkings.website/:path*',
-        permanent: true,
-      },
-      // pdfers.com 리다이렉트 제거 - Vercel에서 자동 처리
-    ]
-  },
+  // 모든 리다이렉트 제거 - Vercel에서 도메인 관리
   // Vercel 최적화 설정 추가
   swcMinify: true,
   compress: true,

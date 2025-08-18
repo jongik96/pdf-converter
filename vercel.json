@@ -9,13 +9,6 @@
       "destination": "/"
     }
   ],
-  "redirects": [
-    {
-      "source": "https://www.pdfers.com/:path*",
-      "destination": "https://pdfers.com/:path*",
-      "permanent": true
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
