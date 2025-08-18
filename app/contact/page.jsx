@@ -36,7 +36,7 @@ export default function ContactPage() {
       </p>
       <div className="bg-gray-100 rounded p-6 mb-6">
         <p className="mb-2 font-semibold">이메일 문의</p>
-        <a href="mailto:pji3503@gmail.com" className="text-blue-700 underline font-mono">
+        <a href="mailto:contact@pdfers.com" className="text-blue-700 underline font-mono">
           contact@pdfers.com
         </a>
       </div>

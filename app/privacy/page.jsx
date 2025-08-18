@@ -66,7 +66,7 @@ export default function PrivacyPage() {
           <b>이용자의 권리</b>
           <ul className="list-disc ml-6 mt-2">
             <li>이용자는 언제든지 자신의 개인정보 열람, 정정, 삭제를 요청할 수 있습니다.</li>
-            <li>문의: <a href="mailto:pji3503@gmail.com" className="underline text-blue-700">contact@pdfers.com</a></li>
+            <li>문의: <a href="mailto:contact@pdfers.com" className="underline text-blue-700">contact@pdfers.com</a></li>
           </ul>
         </li>
       </ol>
