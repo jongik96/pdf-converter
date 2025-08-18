@@ -7,12 +7,12 @@ export const metadata = {
     "PDF 압축", "PDF 용량 줄이기", "무료 PDF 압축", "PDF 파일 크기 줄이기", "PDF 경량화", "문서킹"
   ],
   alternates: {
-    canonical: "https://www.networkkings.website/pdf-compress",
+    canonical: "https://www.pdfers.coms/pdf-compress",
   },
   openGraph: {
     title: "PDF 용량 줄이기 - 무료 PDF 압축 | 문서킹",
     description: "PDF 파일을 클릭 한 번에 초간편 압축! 고화질 유지, 빠른 처리, 무료 제공. 모바일·PC 어디서나 사용.",
-    url: "https://www.networkkings.website/pdf-compress",
+    url: "https://www.pdfers.com/pdf-compress",
     images: [
       { url: "/og-image.png", width: 1200, height: 630, alt: "PDF 용량 줄이기" }
     ],

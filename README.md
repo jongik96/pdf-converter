@@ -70,9 +70,9 @@
 
 ## 📞 お問い合わせ
 
-- **メール**: contact@networkkings.website
-- **ウェブサイト**: https://www.networkkings.website
-- **お問い合わせページ**: https://www.networkkings.website/contact
+- **メール**: contact@pdfers.com
+- **ウェブサイト**: https://www.pdfers.com
+- **お問い合わせページ**: https://www.pdfers.com/contact
 
 ## 🙏 謝辞
 

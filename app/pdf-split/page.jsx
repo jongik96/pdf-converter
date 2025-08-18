@@ -7,12 +7,12 @@ export const metadata = {
     "PDF 분할", "PDF 쪼개기", "PDF 나누기", "PDF 여러개로", "PDF 범위 분할", "무료 PDF 분할", "문서킹"
   ],
   alternates: {
-    canonical: "https://www.networkkings.website/pdf-split",
+    canonical: "https://www.pdfers.com.website/pdf-split",
   },
   openGraph: {
     title: "PDF 분할 - 원하는 페이지 범위로 나누기 | 문서킹",
     description: "페이지 범위를 입력해서 PDF를 여러 개로 분할! 원하는 부분만 골라 안전하게 나누세요.",
-    url: "https://www.networkkings.website/pdf-split",
+    url: "https://www.pdfers.com.website/pdf-split",
     images: [
       { url: "/og-image.png", width: 1200, height: 630, alt: "PDF 분할" }
     ],

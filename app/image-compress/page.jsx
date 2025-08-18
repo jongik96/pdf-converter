@@ -9,12 +9,12 @@ export const metadata = {
     "무료 이미지 용량 줄이기", "이미지 퀄리티 조절", "이미지 최적화", "문서킹"
   ],
   alternates: {
-    canonical: "https://www.networkkings.website/image-compress",
+    canonical: "https://www.pdfers.com/image-compress",
   },
   openGraph: {
     title: "이미지 용량 줄이기 - JPG, PNG, HEIC, WEBP 무료 압축 | 문서킹",
     description: "JPG, PNG, HEIC, WEBP 이미지를 고품질로 빠르게 압축! 무료로 쉽고 빠르게 이미지 용량을 줄여보세요.",
-    url: "https://www.networkkings.website/image-compress",
+    url: "https://www.pdfers.com/image-compress",
     images: [
       { url: "/og-image.png", width: 1200, height: 630, alt: "이미지 용량 줄이기" }
     ],

@@ -22,7 +22,7 @@ export default function SchemaOrganization() {
             contactPoint: [
               {
                 "@type": "ContactPoint",
-                email: "contact@networkkings.website",
+                email: "contact@pdfers.com",
                 contactType: "customer support",
                 availableLanguage: ["Korean", "English"],
                 areaServed: "KR"

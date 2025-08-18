@@ -7,12 +7,12 @@ export const metadata = {
     "PDF 페이지 추출", "PDF 일부 저장", "PDF 원하는 페이지만", "PDF 추출 툴", "무료 PDF 추출", "문서킹"
   ],
   alternates: {
-    canonical: "https://www.networkkings.website/pdf-extract",
+    canonical: "https://www..pdfers.com/pdf-extract",
   },
   openGraph: {
     title: "PDF 페이지 추출 - 원하는 페이지만 뽑기 | 문서킹",
     description: "복잡한 PDF 문서, 필요한 페이지만 쏙 골라서 새 PDF로 만드세요! 국내 최강 무료 추출 서비스.",
-    url: "https://www.networkkings.website/pdf-extract",
+    url: "https://www.pdfers.com/pdf-extract",
     images: [
       { url: "/og-image.png", width: 1200, height: 630, alt: "PDF 페이지 추출" }
     ],

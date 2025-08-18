@@ -5,12 +5,12 @@ export const metadata = {
     "문서킹 개인정보", "개인정보처리방침", "개인정보 보호", "문서킹", "문서킹 개인정보정책"
   ],
   alternates: {
-    canonical: "https://www.networkkings.website/privacy",
+    canonical: "https://www.pdfers.com.website/privacy",
   },
   openGraph: {
     title: "개인정보처리방침 | 문서킹",
     description: "문서킹은 최소한의 개인정보만을 안전하게 보호하고 있습니다.",
-    url: "https://www.networkkings.website/privacy",
+    url: "https://www.pdfers.com.website/privacy",
     images: [
       { url: "/og-image.png", width: 1200, height: 630, alt: "문서킹 개인정보처리방침" }
     ],
@@ -66,7 +66,7 @@ export default function PrivacyPage() {
           <b>이용자의 권리</b>
           <ul className="list-disc ml-6 mt-2">
             <li>이용자는 언제든지 자신의 개인정보 열람, 정정, 삭제를 요청할 수 있습니다.</li>
-            <li>문의: <a href="mailto:contact@networkkings.website" className="underline text-blue-700">contact@networkkings.website</a></li>
+            <li>문의: <a href="mailto:contact@pdfers.com" className="underline text-blue-700">contact@pdfers.com</a></li>
           </ul>
         </li>
       </ol>

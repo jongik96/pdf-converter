@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.networkkings.website
+Host: https://www.pdfers.com
 
 # Sitemaps
-Sitemap: https://www.networkkings.website/sitemap.xml
+Sitemap: https://www.pdfers.com/sitemap.xml
