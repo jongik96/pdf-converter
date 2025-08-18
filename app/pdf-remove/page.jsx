@@ -1,29 +1,29 @@
 import ClientComponent from "./ClientComponent";
 
 export const metadata = {
-  title: "PDF 페이지 제거 - 원하는 페이지만 삭제 | 문서킹",
-  description: "PDF 파일에서 불필요한 페이지만 골라 빠르게 삭제! 여러 페이지 한 번에 제거 가능. 설치·회원가입 없이 무료로 이용하세요.",
+  title: "PDFページ削除 - 不要なページのみ削除 | ドキュメントキング",
+  description: "PDFファイルから不要なページのみを選んで高速で削除！複数ページ一度に削除可能。インストール・会員登録なしで無料で利用してください。",
   keywords: [
-    "PDF 페이지 삭제", "PDF 페이지 제거", "PDF 한 장 삭제", "PDF 편집", "PDF 페이지 빼기", "무료 PDF 삭제", "문서킹"
+    "PDFページ削除", "PDFページ削除", "PDF一ページ削除", "PDF編集", "PDFページ除去", "無料PDF削除", "ドキュメントキング"
   ],
   alternates: {
-    canonical: "https://www.networkkings.website/pdf-remove",
+    canonical: "https://pdfers.com/pdf-remove",
   },
   openGraph: {
-    title: "PDF 페이지 제거 - 원하는 페이지만 삭제 | 문서킹",
-    description: "PDF에서 필요 없는 페이지만 골라서 삭제하세요! 쉽고 안전한 국내 대표 PDF 편집 서비스.",
-    url: "https://www.networkkings.website/pdf-remove",
+    title: "PDFページ削除 - 不要なページのみ削除 | ドキュメントキング",
+    description: "PDFから不要なページのみを選んで削除してください！簡単で安全な国内代表PDF編集サービス。",
+    url: "https://pdfers.com/pdf-remove",
     images: [
-      { url: "/og-image.png", width: 1200, height: 630, alt: "PDF 페이지 제거" }
+      { url: "/og-image.png", width: 1200, height: 630, alt: "PDFページ削除" }
     ],
-    siteName: "문서킹",
-    locale: "ko_KR",
+    siteName: "ドキュメントキング",
+    locale: "ja_JP",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "PDF 페이지 제거 - 원하는 페이지만 삭제 | 문서킹",
-    description: "PDF에서 필요 없는 페이지만 골라서 삭제하세요! 쉽고 안전한 국내 대표 PDF 편집 서비스.",
+    title: "PDF페이지削除 - 不要なページのみ削除 | ドキュメントキング",
+    description: "PDFから不要なページのみを選んで削除してください！簡単で安全な国内代表PDF編集サービス。",
     images: ["/og-image.png"]
   }
 };

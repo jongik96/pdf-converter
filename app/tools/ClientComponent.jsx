@@ -10,81 +10,81 @@ import { SiWebtrees } from "react-icons/si"
 
 const toolCategories = [
   {
-    name: "PDF 편집",
+    name: "PDF編集",
     tools: [
       {
-        name: "PDF 합치기",
-        description: "2개의 PDF 파일을 합쳐드릴게요.",
+        name: "PDF結合",
+        description: "2つのPDFファイルを結合します。",
         href: "/pdf-merge",
         icon: <BiSolidFilePdf size={36} color="#FF4646" />,
       },
-      { name: "PDF 분할", 
-        description: "PDF 파일을 .jpg 또는 .png로 변환 시켜드릴게요!", 
+      { name: "PDF分割", 
+        description: "PDFを複数のファイルに分割します。", 
         href: "/pdf-split", 
         icon: <BiSolidFilePdf size={36} color="#FF4646" />,},
       {
-        name: "PDF 페이지 제거",
-        description: "PDF 파일을 .xlsx 또는 .csv로 변환시켜드릴게요!",
+        name: "PDFページ削除",
+        description: "不要なページのみ選択して削除します。",
         href: "/pdf-remove",
         icon: <BiSolidFilePdf size={36} color="#FF4646" />,
       },
       {
-        name: "PDF 페이지 추출",
-        description: "PDF 파일을 .pptx로 변환시켜드릴게요!",
+        name: "PDFページ抽出",
+        description: "指定したページだけを抽出します。",
         href: "/pdf-extract",
         icon: <BiSolidFilePdf size={36} color="#FF4646" />,
       },
       {
-        name: "PDF 용량 줄이기",
-        description: "PDF 파일을 .pptx로 변환시켜드릴게요!",
+        name: "PDF容量削減",
+        description: "画質を保ちながらPDFのファイルサイズを圧縮します。",
         href: "/pdf-compress",
         icon: <BiSolidFilePdf size={36} color="#FF4646" />,
       },      
     ],
   },  
   {
-    name: "PDF를 변환",
+    name: "PDFを変換",
     tools: [
       {
-        name: "PDF를 워드로 변환",
-        description: "PDF 파일을 .docx로 변환시켜드릴게요!",
+        name: "PDFをWordに変換",
+        description: "PDFを.docxに変換します。",
         href: "/pdf-to-word",
         icon: <RiFileWord2Fill size={36} color="#185ABD" />,
       },
-      { name: "PDF를 이미지로 변환", description: "PDF 파일을 .jpg 또는 .png로 변환 시켜드릴게요!", href: "/pdf-to-image", icon: <RiFileImageFill size={36} color="#FFD500" />,},
+      { name: "PDFを画像に変換", description: "PDFを.jpgまたは.pngに変換します。", href: "/pdf-to-image", icon: <RiFileImageFill size={36} color="#FFD500" />,},
       {
-        name: "PDF를 엑셀로 변환",
-        description: "PDF 파일을 .xlsx 또는 .csv로 변환시켜드릴게요!",
+        name: "PDFをExcelに変換",
+        description: "PDFを.xlsxまたは.csvに変換します。",
         href: "/pdf-to-excel",
         icon: <RiFileExcel2Fill size={36} color="#1BC47D" />,
       },
       {
-        name: "PDF를 파워포인트로 변환",
-        description: "PDF 파일을 .pptx로 변환시켜드릴게요!",
+        name: "PDFをPowerPointに変換",
+        description: "PDFを.pptxに変換します。",
         href: "/pdf-to-ppt",
         icon: <RiFilePpt2Fill size={36} color="#FF8000" />,
       },
     ],
   },
   {
-    name: "PDF로 변환",
+    name: "PDFに変換",
     tools: [
-      { name: "워드를 PDF로 변환", description: ".docx 파일을 PDF로 변환시켜드릴게요!", href: "/word-to-pdf", icon: <RiFileWord2Fill size={36} color="#185ABD" />, },
-      { name: "이미지를 PDF로 변환", description: ".png 또는 .jpg 파일을 PDF로 변환시켜드릴게요!", href: "/image-to-pdf", icon: <RiFileImageFill size={36} color="#FFD500" />, },
-      { name: "엑셀을 PDF로 변환", description: ".xlsx 또는 .csv 파일을 PDF로 변환시켜드릴게요!", href: "/tools/excel-to-pdf", icon: <RiFileExcel2Fill size={36} color="#1BC47D" />,},
-      { name: "파워포인트를 PDF로 변환", description: ".pptx 파일을 PDF로 변환시켜드릴게요!", href: "/ppt-to-pdf", icon: <RiFilePpt2Fill size={36} color="#FF8000" />, },
+      { name: "WordをPDFに変換", description: ".docxファイルをPDFに変換します。", href: "/word-to-pdf", icon: <RiFileWord2Fill size={36} color="#185ABD" />, },
+      { name: "画像をPDFに変換", description: ".pngまたは.jpgファイルをPDFに変換します。", href: "/image-to-pdf", icon: <RiFileImageFill size={36} color="#FFD500" />, },
+      { name: "ExcelをPDFに変換", description: ".xlsxまたは.csvファイルをPDFに変換します。", href: "/tools/excel-to-pdf", icon: <RiFileExcel2Fill size={36} color="#1BC47D" />,},
+      { name: "PowerPointをPDFに変換", description: ".pptxファイルをPDFに変換します。", href: "/ppt-to-pdf", icon: <RiFilePpt2Fill size={36} color="#FF8000" />, },
     ],
   },
   {
-    name: "이미지 도구",
+    name: "画像ツール",
     tools: [
-      { name: "이미지 사이즈 바꾸기", description: "원하시는 사이즈로 이미지를 변환시켜드릴게요", href: "/image-resize", icon: <RiCustomSize size={36} color="#FF4646" />,},
-      { name: "이미지 용량 줄이기", description: "이미지 파일(jpg or png)을 압축하여 용량을 줄여드릴게요!", href: "/image-compress", icon: <RiFileZipFill size={36} color="#FF4646" />, },      
-      { name: "jpg를 png로 변환", description: "jpg 파일을 png로 변환시켜드릴게요!", href: "/jpg-to-png", icon:  <BiSolidFilePng size={36} color="#F76808" />,  },
-      { name: "png를 jpg로 변환", description: "png 파일을 jpg로 변환시켜드릴게요!", href: "/png-to-jpg", icon:  <BiSolidFileJpg size={36} color="#FF7043" />,  },
-      { name: "heic를 jpg로 변환", description: "heic 파일을 jpg로 변환시켜드릴게요!", href: "/heic-to-jpg", icon:  <BsFiletypeHeic size={36} color="#3DDC97" />,  },
-      { name: "jpg를 webp로 변환", description: "jpg 파일을 webp로 변환시켜드릴게요!", href: "/jpg-to-webp", icon:  <SiWebtrees size={36} color="#185ABD" />,  },
-      { name: "png를 webp로 변환", description: "png 파일을 webp로 변환시켜드릴게요!", href: "/png-to-webp", icon:  <SiWebtrees size={36} color="#185ABD" />  },
+      { name: "画像サイズ変更", description: "ご希望のサイズに画像を変換します。", href: "/image-resize", icon: <RiCustomSize size={36} color="#FF4646" />,},
+      { name: "画像容量削減", description: "画像ファイル(jpgまたはpng)を圧縮して容量を削減します。", href: "/image-compress", icon: <RiFileZipFill size={36} color="#FF4646" />, },      
+      { name: "JPGをPNGに変換", description: "JPGファイルをPNGに変換します。", href: "/jpg-to-png", icon:  <BiSolidFilePng size={36} color="#F76808" />,  },
+      { name: "PNGをJPGに変換", description: "PNGファイルをJPGに変換します。", href: "/png-to-jpg", icon:  <BiSolidFileJpg size={36} color="#FF7043" />,  },
+      { name: "HEICをJPGに変換", description: "HEICファイルをJPGに変換します。", href: "/heic-to-jpg", icon:  <BsFiletypeHeic size={36} color="#3DDC97" />,  },
+      { name: "JPGをWEBPに変換", description: "JPGファイルをWEBPに変換します。", href: "/jpg-to-webp", icon:  <SiWebtrees size={36} color="#185ABD" />,  },
+      { name: "PNGをWEBPに変換", description: "PNGファイルをWEBPに変換します。", href: "/png-to-webp", icon:  <SiWebtrees size={36} color="#185ABD" />  },
 
     ],
   },
@@ -119,7 +119,7 @@ export default function ToolsPage() {
                         <p className="text-sm text-gray-600 mb-4">{tool.description}</p>
                         <div
                           className="flex items-center justify-center text-blue-600 text-sm font-medium">
-                          변환 바로가기 <ArrowRight className="w-4 h-4 ml-1" />
+                          変換へ進む <ArrowRight className="w-4 h-4 ml-1" />
                         </div>
                       </CardContent>
                     </Card>

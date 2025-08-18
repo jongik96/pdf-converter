@@ -142,7 +142,7 @@ export default function WizardClient() {
     }
 
     if (toolKey === "pdf-merge" && files.length < 2) {
-      alert("PDF 합치기는 2개 이상의 파일이 필요하기 때문에, 전용 페이지에서 더 편리하게 진행하실 수 있도록 준비했습니다.");
+      alert("PDF結合には2つ以上のファイルが必要なため、専用ページでより便利に進められるよう準備しました。");
       window.location.href = "/pdf-merge";
       return;
     }
@@ -174,7 +174,7 @@ export default function WizardClient() {
       setResultName(data.filename);
       setOptionTool(null);
     } else {
-       alert("변환 실패");
+       alert("変換失敗");
      }
   };
 
@@ -293,7 +293,7 @@ export default function WizardClient() {
           </CardContent>
         </Card>
       </div>
-      {/* 👇👇 파일 업로드된 경우 광고 노출! 👇👇 */}
+      {/* 👇👇 ファイルアップロード時の広告表示! 👇👇 */}
       {files.length > 0 && (
         <div className="ad-placeholder mt-4 mb-4" style={{ minHeight: 280, width: "100%", maxWidth: 640 }}>
           <div style={{ textAlign: 'left', fontSize: 12, color: '#aaa', marginBottom: 4 }}>広告</div>
@@ -308,13 +308,13 @@ export default function WizardClient() {
           </Script>
         </div>
       )}
-      {/* 👆👆 여기! 👆👆 */}
+      {/* 👆👆 ここ! 👆👆 */}
       {/* 변환 버튼/옵션 */}
       <div className="w-full max-w-2xl">
         <Card>
           <CardContent className="p-8">
-            {files.length === 0 && <p className="text-center text-gray-400">파일을 먼저 업로드 해주세요.</p>}
-            {/* 변환 기능 버튼 자동 표시 */}
+            {files.length === 0 && <p className="text-center text-gray-400">ファイルを先にアップロードしてください。</p>}
+            {/* 変換機能ボタン自動表示 */}
             {files.length > 0 && (
               <>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -484,7 +484,7 @@ export default function WizardClient() {
               </div>
             )}
 
-            {/* 결과 다운로드 */}
+            {/* 結果ダウンロード */}
             {resultUrl && (
               <div className="mt-8 flex flex-col items-center">
                 <p className="mb-2 text-green-600 font-bold">変換完了！ファイルをダウンロードしてください。</p>

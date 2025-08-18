@@ -2,30 +2,30 @@ import ClientComponent from "./ClientComponent";
 
 // app/image-compress/page.jsx 상단에 추가
 export const metadata = {
-  title: "이미지 용량 줄이기 - JPG, PNG, HEIC, WEBP 무료 압축 | 문서킹",
-  description: "이미지 품질을 조절해 용량을 1/10까지 줄이세요! JPG, PNG, WEBP, HEIC 등 다양한 포맷 지원, 완전 무료. 파일 손실 없는 고품질 이미지 압축, 문서킹에서 빠르고 쉽게!",
+  title: "画像容量削減 - JPG、PNG、HEIC、WEBP無料圧縮 | ドキュメントキング",
+  description: "画像品質を調整して容量を1/10まで削減してください！JPG、PNG、WEBP、HEICなど多様な形式対応、完全無料。ファイル損失のない高品質画像圧縮、ドキュメントキングで高速で簡単に！",
   keywords: [
-    "이미지 압축", "JPG 압축", "PNG 압축", "HEIC 압축", "WEBP 압축",
-    "무료 이미지 용량 줄이기", "이미지 퀄리티 조절", "이미지 최적화", "문서킹"
+    "画像圧縮", "JPG圧縮", "PNG圧縮", "HEIC圧縮", "WEBP圧縮",
+    "無料画像容量削減", "画像品質調整", "画像最適化", "ドキュメントキング"
   ],
   alternates: {
-    canonical: "https://www.networkkings.website/image-compress",
+    canonical: "https://pdfers.com/image-compress",
   },
   openGraph: {
-    title: "이미지 용량 줄이기 - JPG, PNG, HEIC, WEBP 무료 압축 | 문서킹",
-    description: "JPG, PNG, HEIC, WEBP 이미지를 고품질로 빠르게 압축! 무료로 쉽고 빠르게 이미지 용량을 줄여보세요.",
-    url: "https://www.networkkings.website/image-compress",
+    title: "画像容量削減 - JPG、PNG、HEIC、WEBP無料圧縮 | ドキュメントキング",
+    description: "JPG、PNG、HEIC、WEBP画像を高品質で高速圧縮！無料で簡単で高速に画像容量を削減してみてください。",
+    url: "https://pdfers.com/image-compress",
     images: [
-      { url: "/og-image.png", width: 1200, height: 630, alt: "이미지 용량 줄이기" }
+      { url: "/og-image.png", width: 1200, height: 630, alt: "画像容量削減" }
     ],
-    siteName: "문서킹",
-    locale: "ko_KR",
+    siteName: "ドキュメントキング",
+    locale: "ja_JP",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "이미지 용량 줄이기 - JPG, PNG, HEIC, WEBP 무료 압축 | 문서킹",
-    description: "JPG, PNG, HEIC, WEBP 이미지를 고품질로 빠르게 압축! 무료로 쉽고 빠르게 이미지 용량을 줄여보세요.",
+    title: "画像容量削減 - JPG、PNG、HEIC、WEBP無料圧縮 | ドキュメントキング",
+    description: "JPG、PNG、HEIC、WEBP画像を高品質で高速圧縮！無料で簡単で高速に画像容量を削減してみてください。",
     images: ["/og-image.png"]
   }
 };

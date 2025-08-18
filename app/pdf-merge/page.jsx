@@ -1,29 +1,29 @@
 import ClientComponent from "./ClientComponent";
 
 export const metadata = {
-  title: "PDF 합치기 - 여러 PDF를 한 번에 병합 | 문서킹",
-  description: "여러 개의 PDF 파일을 빠르게 하나로 합치세요! 최대 5개, 100MB까지 무료로 병합. 설치·회원가입 없이 즉시 이용 가능.",
+  title: "PDF結合 - 複数PDFを一度に結合 | ドキュメントキング",
+  description: "複数のPDFファイルを高速で1つに結合してください！最大5個、100MBまで無料で結合。インストール・会員登録なしですぐに利用可能。",
   keywords: [
-    "PDF 합치기", "PDF 병합", "여러 PDF 한 파일로", "무료 PDF 병합", "PDF Merge", "문서킹"
+    "PDF結合", "PDF結合", "複数PDF一ファイル", "無料PDF結合", "PDF Merge", "ドキュメントキング"
   ],
   alternates: {
-    canonical: "https://www.networkkings.website/pdf-merge",
+    canonical: "https://pdfers.com/pdf-merge",
   },
   openGraph: {
-    title: "PDF 합치기 - 여러 PDF를 한 번에 병합 | 문서킹",
-    description: "여러 개 PDF를 업로드하고 한 번에 병합! 국내 최강 PDF 합치기 서비스. 쉽고 안전하게 사용하세요.",
-    url: "https://www.networkkings.website/pdf-merge",
+    title: "PDF結合 - 複数PDFを一度に結合 | ドキュメントキング",
+    description: "複数のPDFをアップロードして一度に結合！国内最強PDF結合サービス。簡単で安全に使用してください。",
+    url: "https://pdfers.com/pdf-merge",
     images: [
-      { url: "/og-image.png", width: 1200, height: 630, alt: "PDF 합치기" }
+      { url: "/og-image.png", width: 1200, height: 630, alt: "PDF結合" }
     ],
-    siteName: "문서킹",
-    locale: "ko_KR",
+    siteName: "ドキュメントキング",
+    locale: "ja_JP",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "PDF 합치기 - 여러 PDF를 한 번에 병합 | 문서킹",
-    description: "여러 개 PDF를 업로드하고 한 번에 병합! 국내 최강 PDF 합치기 서비스. 쉽고 안전하게 사용하세요.",
+    title: "PDF結合 - 複数PDFを一度に結合 | ドキュメントキング",
+    description: "複数のPDFをアップロードして一度に結合！国内最強PDF結合サービス。簡単で安全に使用してください。",
     images: ["/og-image.png"]
   }
 };
