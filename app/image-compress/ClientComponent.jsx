@@ -17,11 +17,11 @@ const isValidImage = (file) => {
     "image/jpeg", "image/png", "image/webp", "image/heic"
   ];
   if (!validTypes.includes(file.type)) {
-    alert("이미지 파일만 업로드할 수 있습니다. (JPG, PNG, WEBP, HEIC)");
+    alert("Imageファイルのみアップロードできます。 (JPG, PNG, WEBP, HEIC)");
     return false;
   }
   if (file.size > MAX_FILE_SIZE_MB * 1024 * 1024) {
-    alert("파일 용량은 최대 100MB까지만 허용됩니다.");
+    alert("ファイルサイズは最大100MBまで対応しています。");
     return false;
   }
   return true;
@@ -82,7 +82,7 @@ export default function ImageCompressPage() {
       setConvertedFilename(result.filename);
       setIsConverted(true);
     } else {
-      alert("이미지 압축 실패. 다시 시도해주세요.");
+      alert("Imageの圧縮に失敗しました。もう一度お試しください。");
     }
   };
 
@@ -120,7 +120,7 @@ export default function ImageCompressPage() {
             href="/tools"
             className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            다른 도구 보러 가기
+            他のツールを見る
           </Link>
         </div>
 
@@ -129,8 +129,8 @@ export default function ImageCompressPage() {
           <div className="text-6xl mb-4 flex justify-center items-center">
             <RiFileZipFill size={60} color="#FF4646" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">이미지 용량 줄이기</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">이미지 품질을 조절해 용량을 크게 줄일 수 있습니다!</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Imageサイズを小さくする</h1>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">Image（圧縮率）を調整して容量を大幅に減らすことができます！</p>
         </div>
 
         <div className="max-w-2xl mx-auto mb-16">
@@ -153,7 +153,7 @@ export default function ImageCompressPage() {
                     </div>
                     <div className="flex flex-col items-center justify-center gap-4">
                       <label className="flex items-center gap-2 text-sm">
-                        <span>품질(압축률):</span>
+                        <span>画質（圧縮率）:</span>
                         <input
                           type="range"
                           min={10}
@@ -166,15 +166,15 @@ export default function ImageCompressPage() {
                       </label>
                     </div>
                     <Button variant="outline" size="sm" onClick={resetConverter}>
-                      다른 파일 선택
+                    他のファイルを選択
                     </Button>
                   </div>
                 ) : (
                   <div className="space-y-4 text-center">
                     <Upload className="w-12 h-12 text-gray-400 mx-auto" />
                     <div>
-                      <p className="text-lg font-medium text-gray-900">여기에 이미지를 드래그하거나 클릭하여 업로드하세요</p>
-                      <p className="text-sm text-gray-500">지원 파일: {ACCEPTED_TYPES}</p>
+                      <p className="text-lg font-medium text-gray-900">ここにImageをドラッグするか、クリックしてアップロードしてください</p>
+                      <p className="text-sm text-gray-500">対応ファイル: {ACCEPTED_TYPES}</p>
                     </div>
                     <input
                       type="file"
@@ -187,7 +187,7 @@ export default function ImageCompressPage() {
                       <Button asChild className="cursor-pointer">
                         <span>
                           <FileText className="w-4 h-4 mr-2" />
-                          파일 선택
+                          ファイルを選択
                         </span>
                       </Button>
                     </label>
@@ -208,7 +208,7 @@ export default function ImageCompressPage() {
                       {isConverting ? (
                         <>
                           <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                          압축 중...
+                          圧縮中...
                         </>
                       ) : (
                         "압축하기"
@@ -218,17 +218,17 @@ export default function ImageCompressPage() {
                     <div className="space-y-3">
                       <div className="flex items-center justify-center text-green-600 font-medium">
                         <CheckCircle className="w-5 h-5 mr-2" />
-                        압축이 완료되었습니다!
+                        圧縮が完了しました！
                       </div>
                       <Button onClick={handleDownload} className="w-full h-12 text-lg" size="lg">
                         <Download className="w-5 h-5 mr-2" />
-                        압축된 이미지 다운로드
+                        圧縮後のImageをダウンロード
                       </Button>
                       <Button
                         variant="outline"
                         onClick={resetConverter}
                         className="w-full bg-transparent">
-                        다른 이미지 압축하기
+                        他のImageを圧縮する
                       </Button>
                     </div>
                   )}
