@@ -6,7 +6,7 @@ const nextConfig = {
     optimizeCss: true,
   },
   output: 'standalone',
-  trailingSlash: true,  // ← 추가
+  // trailingSlash: true,  // Vercel에서는 제거
   async redirects() {
     return [
       {
@@ -17,6 +17,10 @@ const nextConfig = {
       },
     ]
   },
+  // Vercel 최적화 설정 추가
+  swcMinify: true,
+  compress: true,
+  poweredByHeader: false,
 };
 
 export default nextConfig;
