@@ -1,0 +1,14 @@
+name: Deploy via Vercel Hook
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:  # 수동 실행도 가능
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Call Vercel Deploy Hook
+        run: curl -X POST "https://api.vercel.com/v1/integrations/deploy/prj_V7ZsbTHS8KrpFmCzaIww46BOq4no/E0rlFTBHj5"

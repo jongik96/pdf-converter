@@ -1,0 +1,62 @@
+{
+  "name": "문서킹 - 무료 파일 변환기",
+  "short_name": "문서킹",
+  "description": "PDF, 워드, 엑셀, 이미지 파일을 쉽고 빠르게 무료로 변환하는 온라인 도구",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "ko",
+  "dir": "ltr",
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "PDF 변환",
+      "short_name": "PDF 변환",
+      "description": "PDF 파일을 다른 형식으로 변환",
+      "url": "/pdf-to-word",
+      "icons": [
+        {
+          "src": "/icon0.svg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "이미지 변환",
+      "short_name": "이미지 변환",
+      "description": "이미지 파일을 다른 형식으로 변환",
+      "url": "/image-to-pdf",
+      "icons": [
+        {
+          "src": "/icon1.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ]
+}
