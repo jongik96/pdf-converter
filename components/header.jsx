@@ -12,50 +12,50 @@ import { useEffect } from "react";
 
 
 const menu = [
-  { name: "홈", href: "/" },
+  { name: "ホーム", href: "/" },
   {
-    name: "PDF 편집", children: [
-      { name: "PDF 합치기", href: "/pdf-merge", icon: <BiSolidFilePdf size={22} color="#FF4646" /> },
-      { name: "PDF 분할", href: "/pdf-split", icon: <BiSolidFilePdf size={22} color="#FF4646" /> },
-      { name: "PDF 페이지 제거", href: "/pdf-remove", icon: <BiSolidFilePdf size={22} color="#FF4646" /> },
-      { name: "PDF 페이지 추출", href: "/pdf-extract", icon: <BiSolidFilePdf size={22} color="#FF4646" /> },
-      { name: "PDF 용량 줄이기", href: "/pdf-compress", icon: <BiSolidFilePdf size={22} color="#FF4646" /> },
+    name: "PDF編集", children: [
+      { name: "PDF結合", href: "/pdf-merge", icon: <BiSolidFilePdf size={22} color="#FF4646" /> },
+      { name: "PDF分割", href: "/pdf-split", icon: <BiSolidFilePdf size={22} color="#FF4646" /> },
+      { name: "PDFページ削除", href: "/pdf-remove", icon: <BiSolidFilePdf size={22} color="#FF4646" /> },
+      { name: "PDFページ抽出", href: "/pdf-extract", icon: <BiSolidFilePdf size={22} color="#FF4646" /> },
+      { name: "PDF容量削減", href: "/pdf-compress", icon: <BiSolidFilePdf size={22} color="#FF4646" /> },
     ]
   },
   {
-    name: "PDF를 변환", children: [
-      { name: "PDF를 워드로 변환", href: "/pdf-to-word", icon: <RiFileWord2Fill size={22} color="#185ABD" /> },
-      { name: "PDF를 이미지로 변환", href: "/pdf-to-image", icon: <RiFileImageFill size={22} color="#FFD500" /> },
-      { name: "PDF를 엑셀로 변환", href: "/pdf-to-excel", icon: <RiFileExcel2Fill size={22} color="#1BC47D" /> },
-      { name: "PDF를 파워포인트로 변환", href: "/pdf-to-ppt", icon: <RiFilePpt2Fill size={22} color="#FF8000" /> },
+    name: "PDFを変換", children: [
+      { name: "PDFをWordに変換", href: "/pdf-to-word", icon: <RiFileWord2Fill size={22} color="#185ABD" /> },
+      { name: "PDFを画像に変換", href: "/pdf-to-image", icon: <RiFileImageFill size={22} color="#FFD500" /> },
+      { name: "PDFをExcelに変換", href: "/pdf-to-excel", icon: <RiFileExcel2Fill size={22} color="#1BC47D" /> },
+      { name: "PDFをPowerPointに変換", href: "/pdf-to-ppt", icon: <RiFilePpt2Fill size={22} color="#FF8000" /> },
     ]
   },
   {
-    name: "PDF로 변환", children: [
-      { name: "워드를 PDF로 변환", href: "/word-to-pdf", icon: <RiFileWord2Fill size={22} color="#185ABD" /> },
-      { name: "이미지를 PDF로 변환", href: "/image-to-pdf", icon: <RiFileImageFill size={22} color="#FFD500" /> },
-      { name: "엑셀을 PDF로 변환", href: "/excel-to-pdf", icon: <RiFileExcel2Fill size={22} color="#1BC47D" /> },
-      { name: "파워포인트를 PDF로 변환", href: "/ppt-to-pdf", icon: <RiFilePpt2Fill size={22} color="#FF8000" /> },
+    name: "PDFに変換", children: [
+      { name: "WordをPDFに変換", href: "/word-to-pdf", icon: <RiFileWord2Fill size={22} color="#185ABD" /> },
+      { name: "画像をPDFに変換", href: "/image-to-pdf", icon: <RiFileImageFill size={22} color="#FFD500" /> },
+      { name: "ExcelをPDFに変換", href: "/excel-to-pdf", icon: <RiFileExcel2Fill size={22} color="#1BC47D" /> },
+      { name: "PowerPointをPDFに変換", href: "/ppt-to-pdf", icon: <RiFilePpt2Fill size={22} color="#FF8000" /> },
     ]
   },
   {
-    name: "이미지 도구", children: [
-      { name: "이미지 용량 줄이기", href: "/image-compress", icon: <RiFileZipFill size={22} color="#FF4646" /> },
-      { name: "이미지 사이즈 변경", href: "/image-resize", icon: <RiCustomSize size={22} color="#FF4646" /> },
-      { name: "JPG를 PNG로", href: "/jpg-to-png", icon: <BiSolidFilePng size={22} color="#F76808" /> },
-      { name: "PNG를 JPG로", href: "/png-to-jpg", icon: <BiSolidFileJpg size={22} color="#FF7043" /> },
-      { name: "HEIC를 JPG로", href: "/heic-to-jpg", icon: <BsFiletypeHeic size={22} color="#3DDC97" /> },
-      { name: "JPG를 WEBP로", href: "/jpg-to-webp", icon: <SiWebtrees size={22} color="#185ABD" /> },
-      { name: "PNG를 WEBP로", href: "/png-to-webp", icon: <SiWebtrees size={22} color="#185ABD" /> },
+    name: "画像ツール", children: [
+      { name: "画像容量削減", href: "/image-compress", icon: <RiFileZipFill size={22} color="#FF4646" /> },
+      { name: "画像サイズ変更", href: "/image-resize", icon: <RiCustomSize size={22} color="#FF4646" /> },
+      { name: "JPGをPNGに", href: "/jpg-to-png", icon: <BiSolidFilePng size={22} color="#F76808" /> },
+      { name: "PNGをJPGに", href: "/png-to-jpg", icon: <BiSolidFileJpg size={22} color="#FF7043" /> },
+      { name: "HEICをJPGに", href: "/heic-to-jpg", icon: <BsFiletypeHeic size={22} color="#3DDC97" /> },
+      { name: "JPGをWEBPに", href: "/jpg-to-webp", icon: <SiWebtrees size={22} color="#185ABD" /> },
+      { name: "PNGをWEBPに", href: "/png-to-webp", icon: <SiWebtrees size={22} color="#185ABD" /> },
     ]
   },
-  { name: "모든 도구", href: "/tools" },
+  { name: "すべてのツール", href: "/tools" },
   { 
-    name: "문서킹", children: [
-      {name: "소개", href: "/about"},
-      {name: "이용약관", href: "/terms"},
-      {name: "개인정보처리방침", href: "/privacy"},
-      {name: "문의", href: "/contact"}
+    name: "ドキュメントキング", children: [
+      {name: "紹介", href: "/about"},
+      {name: "利用規約", href: "/terms"},
+      {name: "プライバシーポリシー", href: "/privacy"},
+      {name: "お問い合わせ", href: "/contact"}
     ]}
 ];
 
@@ -66,12 +66,12 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState({})
   const dropdownRefs = useRef({})
 
-  // 메뉴 중앙 정렬, 크기 키우기 (Tailwind로 w-full flex justify-center 등)
-  // 데스크탑 드롭다운 - hover+focus 유지, 드롭다운 위 마우스 있을 때 닫히지 않게
+  // メニュー中央揃え、サイズ拡大 (Tailwindでw-full flex justify-centerなど)
+  // デスクトップドロップダウン - hover+focus維持、ドロップダウン上にマウスがある時閉じない
   const handleDropdown = (idx) => setOpenDropdown(idx)
   const handleDropdownLeave = (idx) => {
     setTimeout(() => {
-      // 드롭다운 내부에도 마우스 있으면 닫지 않음
+      // ドロップダウン内部にもマウスがある場合は閉じない
       if (dropdownRefs.current[idx] && dropdownRefs.current[idx].matches(":hover")) return
       setOpenDropdown(null)
     }, 80)
@@ -117,17 +117,17 @@ export function Header() {
     <header className="bg-white shadow-sm border-b sticky top-0 z-30">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+          {/* ロゴ */}
           <a href="/" className="flex items-center space-x-2">
             <FileText className="w-9 h-9 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">문서킹</span>
+            <span className="text-2xl font-bold text-gray-900">ドキュメントキング</span>
           </a>
 
-          {/* Desktop Navigation (중앙 정렬) */}
+          {/* デスクトップナビゲーション (中央揃え) */}
           <nav className="hidden md:flex flex-1 justify-center items-center gap-10">
             {menu.map((item, idx) =>
               !item.children ? (
-                item.name === "홈" ? (
+                                  item.name === "ホーム" ? (
                   <a
                     key={item.name}
                     href="/"
@@ -185,7 +185,7 @@ export function Header() {
             )}
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* モバイルメニューボタン */}
           <Button
             variant="ghost"
             size="icon"
@@ -195,19 +195,19 @@ export function Header() {
           </Button>
         </div>
 
-        {/* Mobile Navigation (아코디언) */}
+        {/* モバイルナビゲーション (アコーディオン) */}
         {isMobileMenuOpen && (
           <div
             ref={mobileMenuRef}
             className="md:hidden py-4 border-t fixed inset-0 z-40 bg-white overflow-y-auto"
             style={{ maxHeight: "100vh" }}
           >
-            {/* 최상단 오른쪽 X(닫기) 버튼 추가 */}
+            {/* 最上段右側X(閉じる)ボタン追加 */}
             <div className="flex justify-end px-4 mb-2">
               <Button
                 variant="ghost"
                 size="icon"
-                aria-label="닫기"
+                aria-label="閉じる"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <X className="w-7 h-7" />
@@ -241,7 +241,7 @@ export function Header() {
                     {mobileOpen[idx] && (
                       <div
                         className="pl-2 pt-1 flex flex-col space-y-1 max-h-80 overflow-y-auto"
-                        style={{ WebkitOverflowScrolling: "touch" }} // iOS 부드러운 스크롤
+                        style={{ WebkitOverflowScrolling: "touch" }} // iOSスムーズスクロール
                       >
                         {item.children.map((sub) => (
                           <Link
