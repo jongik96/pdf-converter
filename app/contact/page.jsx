@@ -49,14 +49,16 @@ export default function ContactPage() {
 
   return (
     <div className="max-w-2xl mx-auto py-12 px-4">
-      <h1 className="text-3xl font-bold mb-6">문의하기</h1>
+      <h1 className="text-3xl font-bold mb-6">お問い合わせ</h1>
       <p className="mb-8 text-gray-700">
-        문서킹 서비스와 관련해 궁금한 점, 개선 요청, 버그 제보 등 어떤 문의라도 환영합니다.<br />
-        아래 이메일 또는 문의 폼으로 연락주시면, 신속하게 답변드리겠습니다.
+      ドキュメントキングのサービスに関するご質問、ご要望、不具合のご報告など、
+どのようなお問い合わせも大歓迎です。<br />
+下記のメールアドレスまたはお問い合わせフォームよりご連絡いただければ、
+迅速にご回答いたします。
       </p>
       
       <div className="bg-gray-100 rounded p-6 mb-6">
-        <p className="mb-2 font-semibold">이메일 문의</p>
+        <p className="mb-2 font-semibold">E-mail お問い合わせ</p>
         <a href="mailto:contact@pdfers.com" className="text-blue-700 underline font-mono">
           contact@pdfers.com
         </a>
@@ -77,7 +79,7 @@ export default function ContactPage() {
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-            이름 <span className="text-red-500">*</span>
+          お名前 <span className="text-red-500">*</span>
           </label>
           <input
             type="text"
@@ -93,7 +95,7 @@ export default function ContactPage() {
 
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-            이메일 <span className="text-red-500">*</span>
+            E-mail <span className="text-red-500">*</span>
           </label>
           <input
             type="email"
@@ -109,7 +111,7 @@ export default function ContactPage() {
 
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-            문의내용 <span className="text-red-500">*</span>
+          お問い合わせ内容 <span className="text-red-500">*</span>
           </label>
           <textarea
             id="message"
@@ -138,17 +140,17 @@ export default function ContactPage() {
 
       <div className="mt-10 space-y-4 text-sm text-gray-600">
         <div className="bg-blue-50 p-4 rounded border border-blue-200">
-          <h3 className="font-semibold text-blue-800 mb-2">📧 문의하기 후 진행 과정</h3>
+          <h3 className="font-semibold text-blue-800 mb-2">📧 お問い合わせ後の流れ</h3>
           <ol className="list-decimal list-inside space-y-1 text-blue-700">
-            <li>전송 완료 후 확인 메일이 도착합니다</li>
-            <li>내용 확인 후 24시간 이내에 답변드립니다</li>
-            <li>긴급한 경우 직접 메일로도 대응 가능합니다</li>
-          </ol>
-        </div>
+          <li>送信完了後、確認メールが届きます</li>
+  <li>内容を確認のうえ、24時間以内にご返信いたします</li>
+  <li>お急ぎの場合は、直接メールでも対応可能です</li>
+</ol>
+</div>
 
-        <p className="text-xs text-gray-400">
-          답변은 모두 직접 확인 후 이메일로 발송됩니다.
-        </p>
+<p className="text-xs text-gray-400">
+  ご返信はすべて確認後、メールにてお送りいたします。
+</p>
       </div>
     </div>
   );
