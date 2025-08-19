@@ -25,11 +25,11 @@ export default function PdfExtractPage() {
 
   const isValidFile = (file) => {
     if (file.type !== "application/pdf") {
-      alert("PDF 파일만 업로드할 수 있습니다.");
+      alert("PDFファイルのみアップロードできます。");
       return false;
     }
     if (file.size > MAX_FILE_SIZE_MB * 1024 * 1024) {
-      alert("파일 크기는 최대 100MB까지 가능합니다.");
+      alert("ファイルサイズは最大100MBまで可能です。");
       return false;
     }
     return true;
@@ -79,7 +79,7 @@ export default function PdfExtractPage() {
       setConvertedFilename(result.filename);
       setIsConverted(true);
     } else {
-      alert("PDF 페이지 추출 실패. 다시 시도해주세요.");
+              alert("PDFページ抽出に失敗しました。再試行してください。");
     }
   };
 
@@ -114,16 +114,16 @@ export default function PdfExtractPage() {
         <div className="mb-8">
           <Link href="/tools" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            도구 모음으로 돌아가기
+            ツール一覧に戻る
           </Link>
         </div>
         <div className="text-center mb-12">
           <div className="text-6xl mb-4 flex justify-center items-center">
             <BiSolidFilePdf size={60} color="#FF4646" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">PDF 페이지 추출</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">PDFページ抽出</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            원하는 페이지만 골라서 새로운 PDF로 추출하세요. (예: 1,2,5-7)
+            希望のページのみを選んで新しいPDFとして抽出してください。（例：1,2,5-7）
           </p>
         </div>
         <div className="max-w-2xl mx-auto mb-16">
@@ -151,17 +151,17 @@ export default function PdfExtractPage() {
                         onChange={(e) => setPages(e.target.value)}
                         placeholder="예: 1,3,5-7"
                       />
-                      <span className="text-xs text-gray-400">쉼표(,)로 구분, 구간은 -로 입력</span>
+                      <span className="text-xs text-gray-400">カンマ（,）で区切り、範囲は-で入力</span>
                     </div>
                     <Button variant="outline" size="sm" onClick={resetConverter}>
-                      다른 파일 선택
+                      別のファイル選択
                     </Button>
                   </div>
                 ) : (
                   <div className="space-y-4 text-center">
                     <Upload className="w-12 h-12 text-gray-400 mx-auto" />
                     <div>
-                      <p className="text-lg font-medium text-gray-900">여기에 PDF 파일을 드래그하거나 클릭하여 업로드하세요</p>
+                      <p className="text-lg font-medium text-gray-900">ここにPDFファイルをドラッグまたはクリックしてアップロードしてください</p>
                     </div>
                     <input
                       type="file"
@@ -174,7 +174,7 @@ export default function PdfExtractPage() {
                       <Button asChild className="cursor-pointer">
                         <span>
                           <FileText className="w-4 h-4 mr-2" />
-                          파일 선택
+                          ファイル選択
                         </span>
                       </Button>
                     </label>
@@ -194,27 +194,27 @@ export default function PdfExtractPage() {
                       {isConverting ? (
                         <>
                           <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                          추출 중...
+                          抽出中...
                         </>
                       ) : (
-                        "페이지 추출"
+                        "ページ抽出"
                       )}
                     </Button>
                   ) : (
                     <div className="space-y-3">
                       <div className="flex items-center justify-center text-green-600 font-medium">
                         <CheckCircle className="w-5 h-5 mr-2" />
-                        추출이 완료되었습니다!
+                        抽出が完了しました！
                       </div>
                       <Button onClick={handleDownload} className="w-full h-12 text-lg" size="lg">
                         <Download className="w-5 h-5 mr-2" />
-                        추출된 PDF 다운로드
+                        抽出されたPDFをダウンロード
                       </Button>
                       <Button
                         variant="outline"
                         onClick={resetConverter}
                         className="w-full bg-transparent">
-                        다른 파일 추출하기
+                        別のファイルを抽出する
                       </Button>
                     </div>
                   )}

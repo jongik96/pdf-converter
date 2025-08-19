@@ -31,11 +31,11 @@ const MAX_FILES = 5;
 
     const validFiles = selected.filter((file) => {
         if (file.type !== "application/pdf") {
-        alert("PDF 파일만 업로드할 수 있습니다.");
+        alert("PDFファイルのみアップロードできます。");
         return false;
         }
         if (file.size > MAX_FILE_SIZE_MB * 1024 * 1024) {
-        alert("파일 용량은 최대 100MB까지만 허용됩니다.");
+        alert("ファイル容量は最大100MBまで許可されています。");
         return false;
         }
         return true;
@@ -45,7 +45,7 @@ const MAX_FILES = 5;
 
     const totalSize = combined.reduce((sum, file) => sum + file.size, 0);
     if (totalSize > MAX_TOTAL_SIZE_MB * 1024 * 1024) {
-        alert("총 용량은 100MB를 초과할 수 없습니다.");
+        alert("総容量は100MBを超えることはできません。");
         return;
     }
 
@@ -77,7 +77,7 @@ const MAX_FILES = 5;
 
     const validFiles = dropped.filter((file) => {
         if (file.type !== "application/pdf") {
-        alert("PDF 파일만 업로드할 수 있습니다.");
+        alert("PDFファイルのみアップロードできます。");
         return false;
         }
         if (file.size > MAX_FILE_SIZE_MB * 1024 * 1024) {
@@ -91,7 +91,7 @@ const MAX_FILES = 5;
 
     const totalSize = combined.reduce((sum, file) => sum + file.size, 0);
     if (totalSize > MAX_TOTAL_SIZE_MB * 1024 * 1024) {
-        alert("총 용량은 100MB를 초과할 수 없습니다.");
+        alert("総容量は100MBを超えることはできません。");
         return;
     }
 
@@ -109,7 +109,7 @@ const MAX_FILES = 5;
       setConvertedFilename(result.filename);
       setIsConverted(true);
     } else {
-      alert("PDF 합치기 실패. 다시 시도해주세요.");
+              alert("PDF結合に失敗しました。再試行してください。");
     }
   };
 
@@ -149,15 +149,15 @@ const MAX_FILES = 5;
         <div className="mb-8">
           <Link href="/tools" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            다른 도구 보러 가기
+            他のツールを見る
           </Link>
         </div>
         <div className="text-center mb-12">
             <div className="text-6xl mb-4 flex justify-center items-center">
                 <BiSolidFilePdf size={60} color="#FF4646" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">PDF 합치기</h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">여러 개의 PDF 파일을 하나로 합쳐드립니다.</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">PDF結合</h1>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">複数のPDFファイルを一つに結合いたします。</p>
         </div>
         <div className="max-w-2xl mx-auto mb-16">
           <Card className="shadow-xl border-0">
@@ -174,7 +174,7 @@ const MAX_FILES = 5;
                   <div className="space-y-4 text-center">
                     <CheckCircle className="w-12 h-12 text-green-500 mx-auto" />
                     <div>
-                      <p className="text-lg font-medium text-gray-900">{files.length}개 PDF 업로드됨</p>
+                      <p className="text-lg font-medium text-gray-900">{files.length}個のPDFがアップロードされました</p>
                       <ul className="text-sm text-gray-700 mb-2">
                         {files.map((f, idx) => (
                               <li key={idx} className="flex justify-between items-center">
@@ -190,15 +190,15 @@ const MAX_FILES = 5;
                       </ul>
                     </div>
                     <Button variant="outline" size="sm" onClick={resetConverter}>
-                      다른 파일 선택
+                      別のファイル選択
                     </Button>
                   </div>
                 ) : (
                   <div className="space-y-4 text-center">
                     <Upload className="w-12 h-12 text-gray-400 mx-auto" />
                     <div>
-                      <p className="text-lg font-medium text-gray-900">여기에 PDF를 드래그하거나 클릭하여 업로드하세요</p>
-                      <p className="text-sm text-gray-500">지원 파일: {ACCEPTED_TYPES}</p>
+                      <p className="text-lg font-medium text-gray-900">ここにPDFをドラッグまたはクリックしてアップロードしてください</p>
+                      <p className="text-sm text-gray-500">対応ファイル: {ACCEPTED_TYPES}</p>
                     </div>
                     <input
                       type="file"
@@ -211,7 +211,7 @@ const MAX_FILES = 5;
                     <label htmlFor="file-upload">
                       <Button asChild className="cursor-pointer">
                         <span>
-                          파일 선택
+                          ファイル選択
                         </span>
                       </Button>
                     </label>
@@ -231,27 +231,27 @@ const MAX_FILES = 5;
                       {isConverting ? (
                         <>
                           <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                          변환 중...
+                          変換中...
                         </>
                       ) : (
-                        "합치기"
+                        "結合する"
                       )}
                     </Button>
                   ) : (
                     <div className="space-y-3">
                       <div className="flex items-center justify-center text-green-600 font-medium">
                         <CheckCircle className="w-5 h-5 mr-2" />
-                        합치기 완료!
+                        結合完了！
                       </div>
                       <Button onClick={handleDownload} className="w-full h-12 text-lg" size="lg">
                         <Download className="w-5 h-5 mr-2" />
-                        합쳐진 PDF 다운로드
+                        結合されたPDFをダウンロード
                       </Button>
                       <Button
                         variant="outline"
                         onClick={resetConverter}
                         className="w-full bg-transparent">
-                        다른 PDF 합치기
+                        別のPDFを結合する
                       </Button>
                     </div>
                   )}

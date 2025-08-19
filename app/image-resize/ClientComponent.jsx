@@ -39,11 +39,11 @@ export default function ImageResizePage() {
   // ---------- 확장자, 용량 체크 함수 추가 ----------
   const isValidFile = (file) => {
     if (!ALLOWED_TYPES.includes(file.type)) {
-      alert("이미지 파일만 업로드할 수 있습니다.\n(jpg, png, webp, heic 등)");
+      alert("画像ファイルのみアップロードできます。\n(jpg、png、webp、heicなど)");
       return false;
     }
     if (file.size > MAX_FILE_SIZE_MB * 1024 * 1024) {
-      alert("파일 용량은 최대 100MB까지만 허용됩니다.");
+      alert("ファイル容量は最大100MBまで許可されています。");
       return false;
     }
     return true;
@@ -133,7 +133,7 @@ export default function ImageResizePage() {
       setConvertedFilename(result.filename);
       setIsConverted(true);
     } else {
-      alert("이미지 변환 실패. 다시 시도해주세요.");
+              alert("画像変換に失敗しました。再試行してください。");
     }
   };
 
@@ -174,7 +174,7 @@ export default function ImageResizePage() {
             href="/tools"
             className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            다른 도구 보러 가기
+            他のツールを見る
           </Link>
         </div>
 
@@ -184,8 +184,8 @@ export default function ImageResizePage() {
             {/* 여기에 아이콘 넣기 */}
             <RiCustomSize size={60} color="#FF4646" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">이미지 사이즈 바꾸기</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">원하는 크기로 이미지를 리사이즈하세요. 비율 유지도 가능합니다!</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">画像サイズ変更</h1>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">希望のサイズで画像をリサイズしてください。アスペクト比の維持も可能です！</p>
         </div>
 
         <div className="max-w-2xl mx-auto mb-16">
@@ -206,12 +206,12 @@ export default function ImageResizePage() {
                     <div>
                       <p className="text-lg font-medium text-gray-900">{file.name}</p>
                       <p className="text-sm text-gray-500">
-                        원본 크기: {originalSize ? `${originalSize.width} x ${originalSize.height} px` : "알 수 없음"}
+                        元のサイズ: {originalSize ? `${originalSize.width} x ${originalSize.height} px` : "不明"}
                       </p>
                     </div>
                     <div className="flex flex-col md:flex-row items-center justify-center gap-4">
                       <div>
-                        <label className="mr-2 font-semibold">가로(px)</label>
+                        <label className="mr-2 font-semibold">幅(px)</label>
                         <input
                           type="number"
                           className="border rounded w-28 px-2 py-1"
@@ -222,7 +222,7 @@ export default function ImageResizePage() {
                       </div>
                       <span className="mx-2 text-gray-400">×</span>
                       <div>
-                        <label className="mr-2 font-semibold">세로(px)</label>
+                        <label className="mr-2 font-semibold">高さ(px)</label>
                         <input
                           type="number"
                           className="border rounded w-28 px-2 py-1"
@@ -238,19 +238,19 @@ export default function ImageResizePage() {
                           onChange={() => setKeepRatio(!keepRatio)}
                           className="mr-1"
                         />
-                        비율 유지
+                        アスペクト比維持
                       </label>
                     </div>
                     <Button variant="outline" size="sm" onClick={resetConverter}>
-                      다른 파일 선택
+                      別のファイル選択
                     </Button>
                   </div>
                 ) : (
                   <div className="space-y-4 text-center">
                     <Upload className="w-12 h-12 text-gray-400 mx-auto" />
                     <div>
-                      <p className="text-lg font-medium text-gray-900">여기에 이미지를 드래그하거나 클릭하여 업로드하세요</p>
-                      <p className="text-sm text-gray-500">지원 파일: {ACCEPTED_TYPES}</p>
+                      <p className="text-lg font-medium text-gray-900">ここに画像をドラッグまたはクリックしてアップロードしてください</p>
+                      <p className="text-sm text-gray-500">対応ファイル: {ACCEPTED_TYPES}</p>
                     </div>
                     <input
                       type="file"
@@ -263,7 +263,7 @@ export default function ImageResizePage() {
                       <Button asChild className="cursor-pointer">
                         <span>
                           <FileText className="w-4 h-4 mr-2" />
-                          파일 선택
+                          ファイル選択
                         </span>
                       </Button>
                     </label>
@@ -284,27 +284,27 @@ export default function ImageResizePage() {
                       {isConverting ? (
                         <>
                           <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                          변환 중...
+                          変換中...
                         </>
                       ) : (
-                        "변환하기"
+                        "変換する"
                       )}
                     </Button>
                   ) : (
                     <div className="space-y-3">
                       <div className="flex items-center justify-center text-green-600 font-medium">
                         <CheckCircle className="w-5 h-5 mr-2" />
-                        변환이 완료되었습니다!
+                        変換が完了しました！
                       </div>
                       <Button onClick={handleDownload} className="w-full h-12 text-lg" size="lg">
                         <Download className="w-5 h-5 mr-2" />
-                        변환된 이미지 다운로드
+                        変換された画像をダウンロード
                       </Button>
                       <Button
                         variant="outline"
                         onClick={resetConverter}
                         className="w-full bg-transparent">
-                        다른 이미지 변환하기
+                        別の画像を変換する
                       </Button>
                     </div>
                   )}

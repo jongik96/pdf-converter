@@ -23,11 +23,11 @@ export default function PdfSplitPage() {
 
     const isValidFile = (file) => {
     if (file.type !== "application/pdf") {
-        alert("PDF 파일만 업로드할 수 있습니다.");
+        alert("PDFファイルのみアップロードできます。");
         return false;
     }
     if (file.size > MAX_FILE_SIZE_MB * 1024 * 1024) {
-        alert("파일 용량은 최대 100MB까지만 허용됩니다.");
+        alert("ファイル容量は最大100MBまで許可されています。");
         return false;
     }
     return true;
@@ -52,7 +52,7 @@ export default function PdfSplitPage() {
     const f = droppedFiles[0];
     if (!isValidFile(f)) return;
     if (f.size > MAX_TOTAL_SIZE_MB * 1024 * 1024) {
-        alert("파일 용량은 100MB를 초과할 수 없습니다.");
+        alert("ファイル容量は100MBを超えることはできません。");
         return;
     }
 
@@ -65,7 +65,7 @@ export default function PdfSplitPage() {
     if (!f) return;
     if (!isValidFile(f)) return;
     if (f.size > MAX_TOTAL_SIZE_MB * 1024 * 1024) {
-        alert("파일 용량은 100MB를 초과할 수 없습니다.");
+        alert("ファイル容量は100MBを超えることはできません。");
         return;
     }
     setFile(f);
@@ -74,7 +74,7 @@ export default function PdfSplitPage() {
 
   const handleConvertClick = async () => {
     if (!file || !ranges) {
-      alert("PDF 파일과 분할 범위를 입력하세요.");
+      alert("PDFファイルと分割範囲を入力してください。");
       return;
     }
     setIsConverting(true);
@@ -85,7 +85,7 @@ export default function PdfSplitPage() {
       setDownloadFilename(result.filename);
       setIsConverted(true);
     } else {
-      alert("분할 실패. 다시 시도해주세요.");
+              alert("分割に失敗しました。再試行してください。");
     }
   };
 
@@ -120,15 +120,15 @@ export default function PdfSplitPage() {
         <div className="mb-8">
           <Link href="/tools" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            다른 도구 보러 가기
+            他のツールを見る
           </Link>
         </div>
         <div className="text-center mb-12">
             <div className="text-6xl mb-4 flex justify-center items-center">
                 <BiSolidFilePdf size={60} color="#FF4646" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">PDF 분할</h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">페이지 범위를 입력해서 PDF를 여러 개로 분할하세요.</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">PDF分割</h1>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">ページ範囲を入力してPDFを複数に分割してください。</p>
         </div>
         <div className="max-w-2xl mx-auto mb-16">
           <Card className="shadow-xl border-0">
@@ -146,17 +146,17 @@ export default function PdfSplitPage() {
                     <CheckCircle className="w-12 h-12 text-green-500 mx-auto" />
                     <div>
                       <p className="text-lg font-medium text-gray-900">{file.name}</p>
-                      <Button variant="outline" size="sm" onClick={resetConverter}>
-                        다른 파일 선택
-                      </Button>
+                                          <Button variant="outline" size="sm" onClick={resetConverter}>
+                      別のファイル選択
+                    </Button>
                     </div>
                   </div>
                 ) : (
                   <div className="space-y-4 text-center">
                     <Upload className="w-12 h-12 text-gray-400 mx-auto" />
                     <div>
-                      <p className="text-lg font-medium text-gray-900">여기에 PDF를 드래그하거나 클릭하여 업로드하세요</p>
-                      <p className="text-sm text-gray-500">지원 파일: .pdf</p>
+                      <p className="text-lg font-medium text-gray-900">ここにPDFをドラッグまたはクリックしてアップロードしてください</p>
+                      <p className="text-sm text-gray-500">対応ファイル: .pdf</p>
                     </div>
                     <input
                       type="file"
@@ -169,7 +169,7 @@ export default function PdfSplitPage() {
                       <Button asChild className="cursor-pointer">
                         <span>
                           <FileText className="w-4 h-4 mr-2" />
-                          파일 선택
+                          ファイル選択
                         </span>
                       </Button>
                     </label>
@@ -180,14 +180,14 @@ export default function PdfSplitPage() {
               {file && (
                 <div className="my-6">
                   <label className="block mb-2 font-semibold text-gray-900">
-                    분할할 페이지 범위 <span className="text-gray-400 text-sm">(예: 1-3,5,7-8)</span>
+                    分割するページ範囲 <span className="text-gray-400 text-sm">（例：1-3,5,7-8）</span>
                   </label>
                   <input
                     type="text"
                     className="border rounded w-full px-4 py-2"
                     value={ranges}
                     onChange={e => setRanges(e.target.value)}
-                    placeholder="예: 1-3,5,7-8"
+                    placeholder="例：1-3,5,7-8"
                   />
                 </div>
               )}
@@ -204,27 +204,27 @@ export default function PdfSplitPage() {
                       {isConverting ? (
                         <>
                           <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                          분할 중...
+                          分割中...
                         </>
                       ) : (
-                        "PDF 분할하기"
+                        "PDF分割する"
                       )}
                     </Button>
                   ) : (
                     <div className="space-y-3">
                       <div className="flex items-center justify-center text-green-600 font-medium">
                         <CheckCircle className="w-5 h-5 mr-2" />
-                        분할이 완료되었습니다!
+                        分割が完了しました！
                       </div>
                       <Button onClick={handleDownload} className="w-full h-12 text-lg" size="lg">
                         <Download className="w-5 h-5 mr-2" />
-                        분할된 PDF 다운로드
+                        分割されたPDFをダウンロード
                       </Button>
                       <Button
                         variant="outline"
                         onClick={resetConverter}
                         className="w-full bg-transparent">
-                        다른 PDF 분할하기
+                        別のPDFを分割する
                       </Button>
                     </div>
                   )}

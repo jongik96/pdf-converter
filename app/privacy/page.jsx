@@ -1,27 +1,27 @@
 export const metadata = {
-  title: "개인정보처리방침 | 문서킹",
-  description: "문서킹은 최소한의 개인정보만을 안전하게 보호하고 있습니다.",
+  title: "個人情報処理方針 | 文書キング",
+  description: "文書キングは最小限の個人情報のみを安全に保護しています。",
   keywords: [
-    "문서킹 개인정보", "개인정보처리방침", "개인정보 보호", "문서킹", "문서킹 개인정보정책"
+    "文書キング個人情報", "個人情報処理方針", "個人情報保護", "文書キング", "文書キング個人情報方針"
   ],
   alternates: {
     canonical: "https://www.pdfers.com/privacy",
   },
   openGraph: {
-    title: "개인정보처리방침 | 문서킹",
-    description: "문서킹은 최소한의 개인정보만을 안전하게 보호하고 있습니다.",
+    title: "個人情報処理方針 | 文書キング",
+    description: "文書キングは最小限の個人情報のみを安全に保護しています。",
     url: "https://www.pdfers.com/privacy",
     images: [
-      { url: "/og-image.png", width: 1200, height: 630, alt: "문서킹 개인정보처리방침" }
+      { url: "/og-image.png", width: 1200, height: 630, alt: "文書キング個人情報処理方針" }
     ],
-    siteName: "문서킹",
-    locale: "ko_KR",
+    siteName: "文書キング",
+    locale: "ja_JP",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "개인정보처리방침 | 문서킹",
-    description: "문서킹은 최소한의 개인정보만을 안전하게 보호하고 있습니다.",
+    title: "個人情報処理方針 | 文書キング",
+    description: "文書キングは最小限の個人情報のみを安全に保護しています。",
     images: ["/og-image.png"]
   }
 };
@@ -29,50 +29,50 @@ export const metadata = {
 export default function PrivacyPage() {
   return (
     <div className="max-w-2xl mx-auto py-12 px-4">
-      <h1 className="text-3xl font-bold mb-6">개인정보처리방침</h1>
+      <h1 className="text-3xl font-bold mb-6">個人情報処理方針</h1>
       <p className="mb-6 text-gray-700">
-        문서킹(이하 '사이트')은 이용자의 개인정보를 무엇보다 소중하게 생각합니다.<br />
-        개인정보 보호법 등 관련 법령을 준수하며, 개인정보를 최소한으로 수집하고 안전하게 관리합니다.
+        文書キング（以下「サイト」）は利用者の個人情報を何よりも大切に考えています。<br />
+        個人情報保護法など関連法令を遵守し、個人情報を最小限に収集し安全に管理しています。
       </p>
       <ol className="list-decimal ml-6 space-y-4 text-sm">
         <li>
-          <b>수집하는 개인정보 항목 및 방법</b>
+          <b>収集する個人情報項目及び方法</b>
           <ul className="list-disc ml-6 mt-2">
-            <li>사이트는 일반적인 파일 변환 서비스 이용 시 개인정보를 수집하지 않습니다.</li>
-            <li>문의 시, 이메일 주소와 문의 내용을 입력받을 수 있습니다.</li>
+            <li>サイトは一般的なファイル変換サービス利用時に個人情報を収集しません。</li>
+            <li>お問い合わせ時、メールアドレスとお問い合わせ内容を入力していただく場合があります。</li>
           </ul>
         </li>
         <li>
-          <b>개인정보의 이용 목적</b>
+          <b>個人情報の利用目的</b>
           <ul className="list-disc ml-6 mt-2">
-            <li>문의 및 요청사항 응대, 서비스 개선을 위한 참고 자료로만 활용합니다.</li>
-            <li>이외의 목적으로 개인정보를 이용하지 않습니다.</li>
+            <li>お問い合わせ及びご要望への対応、サービス改善のための参考資料としてのみ活用します。</li>
+            <li>これ以外の目的で個人情報を利用しません。</li>
           </ul>
         </li>
         <li>
-          <b>개인정보의 보유 및 파기</b>
+          <b>個人情報の保有及び廃棄</b>
           <ul className="list-disc ml-6 mt-2">
-            <li>문의가 해결된 후 즉시 개인정보를 안전하게 삭제합니다.</li>
-            <li>별도의 회원가입·로그인 기능을 운영하지 않으므로 장기 보관하지 않습니다.</li>
+            <li>お問い合わせが解決された後、即座に個人情報を安全に削除します。</li>
+            <li>別途の会員登録・ログイン機能を運営していないため、長期保管しません。</li>
           </ul>
         </li>
         <li>
-          <b>개인정보 제공 및 위탁</b>
+          <b>個人情報提供及び委託</b>
           <ul className="list-disc ml-6 mt-2">
-            <li>제3자에게 개인정보를 제공하거나 위탁하지 않습니다.</li>
+            <li>第三者に個人情報を提供または委託しません。</li>
           </ul>
         </li>
         <li>
-          <b>이용자의 권리</b>
+          <b>利用者の権利</b>
           <ul className="list-disc ml-6 mt-2">
-            <li>이용자는 언제든지 자신의 개인정보 열람, 정정, 삭제를 요청할 수 있습니다.</li>
-            <li>문의: <a href="mailto:contact@pdfers.com" className="underline text-blue-700">contact@pdfers.com</a></li>
+            <li>利用者はいつでも自分の個人情報の閲覧、訂正、削除を請求できます。</li>
+            <li>お問い合わせ: <a href="mailto:contact@pdfers.com" className="underline text-blue-700">contact@pdfers.com</a></li>
           </ul>
         </li>
       </ol>
       <p className="mt-8 text-xs text-gray-400">
-        본 방침은 2025년 7월 19일부터 적용됩니다.<br />
-        변경사항 발생 시 홈페이지를 통해 사전 공지합니다.
+        本方針は2025年7月19日から適用されます。<br />
+        変更事項発生時はホームページを通じて事前に公告いたします。
       </p>
     </div>
   );

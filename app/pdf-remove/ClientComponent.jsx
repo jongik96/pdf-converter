@@ -24,11 +24,11 @@ export default function PdfRemovePage() {
 
     const isValidFile = (file) => {
     if (file.type !== "application/pdf") {
-        alert("PDF 파일만 업로드할 수 있습니다.");
+        alert("PDFファイルのみアップロードできます。");
         return false;
     }
     if (file.size > MAX_FILE_SIZE_MB * 1024 * 1024) {
-        alert("파일 용량은 최대 100MB까지 가능합니다.");
+        alert("ファイルサイズは最大100MBまで可能です。");
         return false;
     }
     return true;
@@ -77,7 +77,7 @@ export default function PdfRemovePage() {
       setConvertedFilename(result.filename);
       setIsConverted(true);
     } else {
-      alert("PDF 페이지 제거 실패. 다시 시도해주세요.");
+              alert("PDFページ削除に失敗しました。再試行してください。");
     }
   };
 
@@ -115,7 +115,7 @@ export default function PdfRemovePage() {
             href="/tools"
             className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            모든 도구 보러 가기
+            すべてのツールを見る
           </Link>
         </div>
 
@@ -123,9 +123,9 @@ export default function PdfRemovePage() {
           <div className="text-6xl mb-4 flex justify-center items-center">
             <BiSolidFilePdf size={60} color="#FF4646" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">PDF 페이지 제거</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">PDFページ削除</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            PDF에서 필요 없는 페이지를 삭제하세요! 예시: 2,5,7-10
+            PDFから不要なページを削除してください！例：2,5,7-10
           </p>
         </div>
 
@@ -144,7 +144,7 @@ export default function PdfRemovePage() {
                     <CheckCircle className="w-12 h-12 text-green-500 mx-auto" />
                     <p className="text-lg font-medium text-gray-900">{file.name}</p>
                     <Button variant="outline" size="sm" onClick={resetConverter}>
-                      다른 파일 선택
+                      別のファイル選択
                     </Button>
                   </div>
                 ) : (
@@ -152,9 +152,9 @@ export default function PdfRemovePage() {
                     <Upload className="w-12 h-12 text-gray-400 mx-auto" />
                     <div>
                       <p className="text-lg font-medium text-gray-900">
-                        PDF 파일을 드래그하거나 클릭하여 업로드하세요
+                        PDFファイルをドラッグまたはクリックしてアップロードしてください
                       </p>
-                      <p className="text-sm text-gray-500">지원 파일: .pdf</p>
+                      <p className="text-sm text-gray-500">対応ファイル: .pdf</p>
                     </div>
                     <input
                       type="file"
@@ -167,7 +167,7 @@ export default function PdfRemovePage() {
                       <Button asChild className="cursor-pointer">
                         <span>
                           <FileText className="w-4 h-4 mr-2" />
-                          파일 선택
+                          ファイル選択
                         </span>
                       </Button>
                     </label>
@@ -179,14 +179,14 @@ export default function PdfRemovePage() {
               {file && (
                 <div className="mt-6 space-y-4">
                   <label className="block mb-2 text-md text-gray-700 font-medium">
-                    제거할 페이지 번호 입력 (예: 1,3,5-7)
+                    削除するページ番号を入力（例：1,3,5-7）
                   </label>
                   <input
                     type="text"
                     className="border rounded w-full px-2 py-2 text-lg"
                     value={pages}
                     onChange={(e) => setPages(e.target.value)}
-                    placeholder="예시: 2,5,8-10"
+                    placeholder="例：2,5,8-10"
                   />
                   {!isConverted ? (
                     <Button
@@ -198,27 +198,27 @@ export default function PdfRemovePage() {
                       {isConverting ? (
                         <>
                           <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                          처리 중...
+                          処理中...
                         </>
                       ) : (
-                        "페이지 제거"
+                        "ページ削除"
                       )}
                     </Button>
                   ) : (
                     <div className="space-y-3">
                       <div className="flex items-center justify-center text-green-600 font-medium">
                         <CheckCircle className="w-5 h-5 mr-2" />
-                        변환이 완료되었습니다!
+                        変換が完了しました！
                       </div>
                       <Button onClick={handleDownload} className="w-full h-12 text-lg" size="lg">
                         <Download className="w-5 h-5 mr-2" />
-                        결과 파일 다운로드
+                        結果ファイルをダウンロード
                       </Button>
                       <Button
                         variant="outline"
                         onClick={resetConverter}
                         className="w-full bg-transparent">
-                        다른 파일 처리하기
+                        別のファイルを処理する
                       </Button>
                     </div>
                   )}

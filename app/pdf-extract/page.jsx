@@ -1,29 +1,29 @@
 import ClientComponent from "./ClientComponent";
 
 export const metadata = {
-  title: "PDF 페이지 추출 - 원하는 페이지만 뽑기 | 문서킹",
-  description: "PDF에서 필요한 페이지만 빠르게 추출! 1,2,5-7 페이지처럼 자유롭게 지정하여 새로운 PDF로 저장하세요. 100% 무료, 회원가입·설치 불필요.",
+  title: "PDFページ抽出 - 希望のページのみ抽出 | 文書キング",
+  description: "PDFから必要なページのみを素早く抽出！1,2,5-7ページのように自由に指定して新しいPDFとして保存してください。100%無料、会員登録・インストール不要。",
   keywords: [
-    "PDF 페이지 추출", "PDF 일부 저장", "PDF 원하는 페이지만", "PDF 추출 툴", "무료 PDF 추출", "문서킹"
+    "PDFページ抽出", "PDF一部保存", "PDF希望のページのみ", "PDF抽出ツール", "無料PDF抽出", "文書キング"
   ],
   alternates: {
     canonical: "https://www..pdfers.com/pdf-extract",
   },
   openGraph: {
-    title: "PDF 페이지 추출 - 원하는 페이지만 뽑기 | 문서킹",
-    description: "복잡한 PDF 문서, 필요한 페이지만 쏙 골라서 새 PDF로 만드세요! 국내 최강 무료 추출 서비스.",
+    title: "PDFページ抽出 - 希望のページのみ抽出 | 文書キング",
+    description: "複雑なPDF文書、必要なページのみを選んで新しいPDFを作成しましょう！国内最強の無料抽出サービス。",
     url: "https://www.pdfers.com/pdf-extract",
     images: [
-      { url: "/og-image.png", width: 1200, height: 630, alt: "PDF 페이지 추출" }
+      { url: "/og-image.png", width: 1200, height: 630, alt: "PDFページ抽出" }
     ],
-    siteName: "문서킹",
-    locale: "ko_KR",
+    siteName: "文書キング",
+    locale: "ja_JP",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "PDF 페이지 추출 - 원하는 페이지만 뽑기 | 문서킹",
-    description: "복잡한 PDF 문서, 필요한 페이지만 쏙 골라서 새 PDF로 만드세요! 국내 최강 무료 추출 서비스.",
+    title: "PDF페이지抽出 - 希望のページのみ抽出 | 文書キング",
+    description: "複雑なPDF文書、必要なページのみを選んで新しいPDFを作成しましょう！国内最強の無料抽出サービス。",
     images: ["/og-image.png"]
   }
 };
