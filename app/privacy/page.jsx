@@ -5,12 +5,12 @@ export const metadata = {
     "문서킹 개인정보", "개인정보처리방침", "개인정보 보호", "문서킹", "문서킹 개인정보정책"
   ],
   alternates: {
-    canonical: "https://www.pdfers.com.website/privacy",
+    canonical: "https://www.pdfers.com/privacy",
   },
   openGraph: {
     title: "개인정보처리방침 | 문서킹",
     description: "문서킹은 최소한의 개인정보만을 안전하게 보호하고 있습니다.",
-    url: "https://www.pdfers.com.website/privacy",
+    url: "https://www.pdfers.com/privacy",
     images: [
       { url: "/og-image.png", width: 1200, height: 630, alt: "문서킹 개인정보처리방침" }
     ],
