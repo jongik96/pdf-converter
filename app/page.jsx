@@ -5,7 +5,7 @@ import SchemaFAQ from "@/components/SchemaFAQ";
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100"> 
 
       {/* 업로드/변환 마법사 */}
       <section id="wizard" className="max-w-2xl mx-auto mt-0">
