@@ -2,6 +2,10 @@
 User-agent: *
 Allow: /
 
+# Google AdSense
+User-agent: Mediapartners-Google
+Allow: /
+
 # Host
 Host: https://www.pdfers.com
 
