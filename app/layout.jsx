@@ -51,7 +51,7 @@ export const metadata = {
     ],
   },
   other: {
-    "google-adsense-account": "ca-pub-2232732758246542",
+    "google-adsense-account": "ca-pub-8843011911940029",
     "naver-site-verification": "a15e9c24bed6fa364370353014afb579be302a6a",
   },
 }
@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
         <Script
           id="adsense-script"
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2232732758246542"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8843011911940029"
           crossOrigin="anonymous"
         />
         {/* 네이버 애널리틱스 lazyOnload 적용 */}
