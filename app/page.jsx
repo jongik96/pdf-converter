@@ -30,7 +30,7 @@ export default function Page() {
             <h3 className="font-bold text-blue-700 mb-2 text-xl md:text-2xl">2. ツール選択</h3>
             <p className="text-gray-700 text-base md:text-lg text-center">
                 自動推奨される変換ツールの中から希望する作業をクリック！<br />
-                変換後自動でダウンロード
+                変換完了後、ダウンロードボタンでファイルを取得
             </p>
             </div>
         </div>

@@ -167,9 +167,7 @@ export default function WizardClient() {
 
     if (data?.success) {
       const url = buildDownloadUrl(data.filename);
-      // same-tab으로 서버 다운로드 (인앱 호환)
-      if (typeof window !== "undefined") window.location.assign(url);
-      // (선택) UI에 버튼도 남기고 싶으면 상태로 절대 URL 저장
+      // 자동 다운로드 제거 - 사용자가 명시적으로 다운로드 버튼 클릭하도록 변경
       setResultUrl(url);
       setResultName(data.filename);
       setOptionTool(null);
@@ -224,7 +222,7 @@ export default function WizardClient() {
 
     if (data?.success) {
       const url = buildDownloadUrl(data.filename);
-      if (typeof window !== "undefined") window.location.assign(url);
+      // 자동 다운로드 제거 - 사용자가 명시적으로 다운로드 버튼 클릭하도록 변경
       setResultUrl(url);
       setResultName(data.filename);
       setOptionTool(null);
@@ -233,16 +231,7 @@ export default function WizardClient() {
     }
   };
 
-  useEffect(() => {
-    if (resultUrl && resultName) {
-      const link = document.createElement("a");
-      link.href = resultUrl;
-      link.download = resultName || "converted_file";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
-  }, [resultUrl, resultName]);
+  // 자동 다운로드 useEffect 제거 - 사용자가 명시적으로 다운로드 버튼을 클릭하도록 변경
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col items-center">
@@ -299,7 +288,7 @@ export default function WizardClient() {
           <div style={{ textAlign: 'left', fontSize: 12, color: '#aaa', marginBottom: 4 }}>広告</div>
           <ins className="adsbygoogle"
             style={{ display: "block" }}
-            data-ad-client="ca-pub-2232732758246542"
+            data-ad-client="ca-pub-8843011911940029"
             data-ad-slot="5287055426"
             data-ad-format="auto"
             data-full-width-responsive="true"></ins>
