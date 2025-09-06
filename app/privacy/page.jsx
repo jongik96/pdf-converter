@@ -66,7 +66,7 @@ export default function PrivacyPage() {
           <b>利用者の権利</b>
           <ul className="list-disc ml-6 mt-2">
             <li>利用者はいつでも自分の個人情報の閲覧、訂正、削除を請求できます。</li>
-            <li>お問い合わせ: <a href="mailto:contact@pdfers.com" className="underline text-blue-700">contact@pdfers.com</a></li>
+            <li>お問い合わせ: <a href="mailto:contact@pdfers.com" className="underline text-green-700">contact@pdfers.com</a></li>
           </ul>
         </li>
       </ol>

@@ -14,7 +14,7 @@ const buildDownloadUrl = (id) =>
   // 지원되는 변환 기능/옵션 정의
 const conversionOptions = [
   // PDF 변환
-  { key: "pdf-to-word", label: "PDFをWordに", ext: ["pdf"], instant: true, color: "border border-blue-200 bg-white text-blue-700 hover:bg-blue-50 shadow-sm" },
+  { key: "pdf-to-word", label: "PDFをWordに", ext: ["pdf"], instant: true, color: "border border-green-200 bg-white text-green-700 hover:bg-green-50 shadow-sm" },
   { key: "pdf-to-image", label: "PDFを画像に", ext: ["pdf"], instant: true, color: "border border-yellow-200 bg-white text-yellow-700 hover:bg-yellow-50 shadow-sm" },
   { key: "pdf-to-excel", label: "PDFをExcelに", ext: ["pdf"], instant: false, color: "border border-green-200 bg-white text-green-700 hover:bg-green-50 shadow-sm" },
   { key: "pdf-to-ppt", label: "PDFをPowerPointに", ext: ["pdf"], instant: true, color: "border border-orange-200 bg-white text-orange-700 hover:bg-orange-50 shadow-sm" },
@@ -28,7 +28,7 @@ const conversionOptions = [
 
   { key: "image-to-pdf", label: "画像をPDFに", ext: ["jpg", "jpeg", "png", "webp", "heic"], multi: true, instant: true, color: "border border-red-200 bg-white text-red-700 hover:bg-red-50 shadow-sm" },
   { key: "jpg-to-png", label: "JPGをPNGに", ext: ["jpg", "jpeg"], instant: true, color: "border border-orange-200 bg-white text-orange-700 hover:bg-orange-50 shadow-sm" },
-  { key: "jpg-to-webp", label: "JPGをWEBPに", ext: ["jpg", "jpeg"], instant: true, color: "border border-blue-200 bg-white text-blue-700 hover:bg-blue-50 shadow-sm" },
+  { key: "jpg-to-webp", label: "JPGをWEBPに", ext: ["jpg", "jpeg"], instant: true, color: "border border-green-200 bg-white text-green-700 hover:bg-green-50 shadow-sm" },
   { key: "png-to-jpg", label: "PNGをJPGに", ext: ["png"], instant: true, color: "border border-orange-200 bg-white text-orange-700 hover:bg-orange-50 shadow-sm"},
   { key: "png-to-webp", label: "PNGをWEBPに", ext: ["png"], instant: true, color: "border border-blue-200 bg-white text-blue-700 hover:bg-orange-50 shadow-sm" },
   { key: "heic-to-jpg", label: "HEICをJPGに", ext: ["heic"], instant: true, color: "border border-green-300 bg-white text-green-800 hover:bg-green-50 shadow-sm" },
@@ -38,7 +38,7 @@ const conversionOptions = [
   { key: "image-resize", label: "画像サイズ変更", ext: ["jpg", "jpeg", "png"], instant: false, color: "border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 shadow-sm" },
 
   // 기타 오피스 문서 변환 (워드/엑셀/파워포인트 계열색 적용)
-  { key: "word-to-pdf", label: "WordをPDFに", ext: ["docx"], instant: true, color: "border border-blue-300 bg-white text-blue-800 hover:bg-blue-50 shadow-sm" },
+  { key: "word-to-pdf", label: "WordをPDFに", ext: ["docx"], instant: true, color: "border border-green-300 bg-white text-green-800 hover:bg-green-50 shadow-sm" },
   { key: "excel-to-pdf", label: "ExcelをPDFに", ext: ["xlsx", "csv"], instant: true, color: "border border-green-300 bg-white text-green-800 hover:bg-green-50 shadow-sm" },
   { key: "ppt-to-pdf", label: "PowerPointをPDFに", ext: ["ppt", "pptx"], instant: true, color: "border border-orange-300 bg-white text-orange-800 hover:bg-orange-50 shadow-sm" },
   ];
@@ -234,7 +234,7 @@ export default function WizardClient() {
   // 자동 다운로드 useEffect 제거 - 사용자가 명시적으로 다운로드 버튼을 클릭하도록 변경
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col items-center">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 flex flex-col items-center">
       <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mt-8 mb-2 text-center">
         ドキュメントキング - 無料変換ツールウィザード
       </h1>      
@@ -244,7 +244,7 @@ export default function WizardClient() {
             <div
               className={
                 "border-2 border-dashed rounded-lg p-8 flex flex-col items-center justify-center cursor-pointer transition " +
-                (dragActive ? "bg-green-50 border-green-400" : "bg-white hover:bg-blue-50")
+                (dragActive ? "bg-green-50 border-green-400" : "bg-white hover:bg-green-50")
               }
               onDrop={handleDrop}
               onDragOver={handleDragOver}
@@ -252,7 +252,7 @@ export default function WizardClient() {
               onDragLeave={handleDragLeave}
             >                    
               <p className="text-lg font-semibold text-center mb-5 text-gray-700">
-              どんなファイルでもアップロードしてください！ <span className="text-blue-700">自動で可能な変換ツール</span>をご提案いたします。
+              どんなファイルでもアップロードしてください！ <span className="text-green-700">自動で可能な変換ツール</span>をご提案いたします。
               </p>
 
               <Upload className="w-12 h-12 text-gray-400 mb-4" />

@@ -119,7 +119,7 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="/" className="flex items-center space-x-2">
-            <FileText className="w-9 h-9 text-blue-600" />
+            <FileText className="w-9 h-9 text-green-600" />
             <span className="text-2xl font-bold text-gray-900">ドキュメントキング</span>
           </a>
 
@@ -131,8 +131,8 @@ export function Header() {
                   <a
                     key={item.name}
                     href="/"
-                    className={`text-lg font-semibold px-2 py-1 rounded hover:text-blue-700 transition-colors ${
-                      pathname === item.href ? "text-blue-700" : "text-gray-900"
+                    className={`text-lg font-semibold px-2 py-1 rounded hover:text-green-700 transition-colors ${
+                      pathname === item.href ? "text-green-700" : "text-gray-900"
                     }`}>
                     {item.name}
                   </a>
@@ -140,8 +140,8 @@ export function Header() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className={`text-lg font-semibold px-2 py-1 rounded hover:text-blue-700 transition-colors ${
-                      pathname === item.href ? "text-blue-700" : "text-gray-900"
+                    className={`text-lg font-semibold px-2 py-1 rounded hover:text-green-700 transition-colors ${
+                      pathname === item.href ? "text-green-700" : "text-gray-900"
                     }`}>
                     {item.name}
                   </Link>
@@ -154,8 +154,8 @@ export function Header() {
                   onMouseLeave={() => handleDropdownLeave(idx)}
                 >
                   <button
-                    className={`text-lg font-semibold flex items-center gap-1 px-2 py-1 rounded hover:text-blue-700 transition-colors ${
-                      openDropdown === idx ? "text-blue-700" : "text-gray-900"
+                    className={`text-lg font-semibold flex items-center gap-1 px-2 py-1 rounded hover:text-green-700 transition-colors ${
+                      openDropdown === idx ? "text-green-700" : "text-gray-900"
                     }`}
                   >
                     {item.name} <ChevronDown className="w-5 h-5" />
@@ -171,8 +171,8 @@ export function Header() {
                       <Link
                         key={sub.href}
                         href={sub.href}
-                        className={`flex items-center gap-3 px-6 py-3 text-base whitespace-nowrap hover:bg-blue-50 hover:text-blue-700 transition-colors ${
-                          pathname === sub.href ? "text-blue-700 font-bold" : "text-gray-800"
+                        className={`flex items-center gap-3 px-6 py-3 text-base whitespace-nowrap hover:bg-green-50 hover:text-green-700 transition-colors ${
+                          pathname === sub.href ? "text-green-700 font-bold" : "text-gray-800"
                         }`}
                       >
                         {sub.icon}
@@ -220,8 +220,8 @@ export function Header() {
                     key={item.name}
                     href={item.href}
                     className={`text-lg font-bold transition-colors rounded-lg px-4 py-3
-                      hover:text-blue-700 ${
-                        pathname === item.href ? "text-blue-700" : "text-gray-900"
+                      hover:text-green-700 ${
+                        pathname === item.href ? "text-green-700" : "text-gray-900"
                       }`}
                     style={{ letterSpacing: "0.02em" }}
                     onClick={() => setIsMobileMenuOpen(false)}
@@ -231,7 +231,7 @@ export function Header() {
                 ) : (
                   <div key={item.name} className="mb-2">
                     <button
-                      className="flex items-center w-full text-lg font-bold justify-between text-gray-900 hover:text-blue-700 rounded-lg px-4 py-3"
+                      className="flex items-center w-full text-lg font-bold justify-between text-gray-900 hover:text-green-700 rounded-lg px-4 py-3"
                       style={{ letterSpacing: "0.02em" }}
                       onClick={() => handleMobileOpen(idx)}
                     >
@@ -248,8 +248,8 @@ export function Header() {
                             key={sub.href}
                             href={sub.href}
                             className={`flex items-center gap-2 px-6 py-3 rounded text-base font-medium
-                              hover:text-blue-700 hover:bg-blue-50 transition-colors ${
-                                pathname === sub.href ? "text-blue-700 font-bold bg-blue-50" : "text-gray-900"
+                              hover:text-green-700 hover:bg-green-50 transition-colors ${
+                                pathname === sub.href ? "text-green-700 font-bold bg-green-50" : "text-gray-900"
                               }`}
                             style={{ letterSpacing: "0.01em" }}
                             onClick={() => setIsMobileMenuOpen(false)}

@@ -107,13 +107,13 @@ export default function PdfRemovePage() {
     }, [isConverted, convertedUrl, convertedFilename]);   
 
   return (
-    <div className="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <div className="bg-gradient-to-br from-green-50 to-emerald-100 min-h-screen">
       <div className="container mx-auto px-4 py-16">
         {/* Back Button */}
         <div className="mb-8">
           <Link
             href="/tools"
-            className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
+            className="inline-flex items-center text-green-600 hover:text-green-700 font-medium">
             <ArrowLeft className="w-4 h-4 mr-2" />
             すべてのツールを見る
           </Link>

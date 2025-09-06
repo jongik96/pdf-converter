@@ -9,7 +9,7 @@ export function Footer() {
           {/* 로고 및 설명 */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
-              <FileText className="w-6 h-6 text-blue-400" />
+              <FileText className="w-6 h-6 text-green-400" />
               <span className="text-lg font-bold">ドキュメントキング</span>
             </Link>
             <p className="text-gray-400 text-sm">

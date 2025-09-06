@@ -10,13 +10,13 @@ export default function LoadingSpinner({
   const getIcon = () => {
     switch (type) {
       case "upload":
-        return <FileText className="w-8 h-8 text-blue-500" />;
+        return <FileText className="w-8 h-8 text-green-500" />;
       case "convert":
-        return <Loader2 className="w-8 h-8 text-blue-500 animate-spin" />;
+        return <Loader2 className="w-8 h-8 text-green-500 animate-spin" />;
       case "download":
         return <Download className="w-8 h-8 text-green-500" />;
       default:
-        return <Loader2 className="w-8 h-8 text-blue-500 animate-spin" />;
+        return <Loader2 className="w-8 h-8 text-green-500 animate-spin" />;
     }
   };
 
@@ -34,7 +34,7 @@ export default function LoadingSpinner({
         <div className="w-full max-w-xs">
           <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
             <div 
-              className="bg-blue-500 h-2 rounded-full transition-all duration-300"
+              className="bg-green-500 h-2 rounded-full transition-all duration-300"
               style={{ width: `${progress}%` }}
             />
           </div>
@@ -76,7 +76,7 @@ export function UploadProgress({ progress, fileName }) {
       </div>
       <div className="w-full bg-gray-200 rounded-full h-2">
         <div 
-          className="bg-blue-500 h-2 rounded-full transition-all duration-300"
+          className="bg-green-500 h-2 rounded-full transition-all duration-300"
           style={{ width: `${progress}%` }}
         />
       </div>

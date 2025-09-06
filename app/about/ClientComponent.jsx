@@ -6,7 +6,7 @@ import { CheckCircle, Shield, Zap, Users } from "lucide-react"
 export default function AboutPage() {
   const features = [
     {
-      icon: <Zap className="w-8 h-8 text-blue-600" />,
+      icon: <Zap className="w-8 h-8 text-green-600" />,
       title: "超高速変換",
       description: "最適化された変換エンジンでファイルを数秒で高速処理します。",
     },
@@ -37,7 +37,7 @@ export default function AboutPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-blue-50 to-indigo-100">
+      <div className="bg-gradient-to-br from-green-50 to-emerald-100">
         <div className="container mx-auto px-4 py-16">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">ドキュメントキング紹介</h1>
@@ -111,7 +111,7 @@ export default function AboutPage() {
               </div>
             </div>
               <div
-                className="bg-gradient-to-br from-blue-100 to-indigo-200 rounded-2xl p-8 text-center">
+                className="bg-gradient-to-br from-green-100 to-emerald-200 rounded-2xl p-8 text-center">
                 <div className="text-6xl mb-4">🚀</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">ドキュメントキング対応拡張子</h3>
                 <p className="text-gray-700 mb-3">

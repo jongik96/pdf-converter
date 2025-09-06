@@ -59,7 +59,7 @@ export default function ContactPage() {
       
       <div className="bg-gray-100 rounded p-6 mb-6">
         <p className="mb-2 font-semibold">E-mail お問い合わせ</p>
-        <a href="mailto:contact@pdfers.com" className="text-blue-700 underline font-mono">
+        <a href="mailto:contact@pdfers.com" className="text-green-700 underline font-mono">
           contact@pdfers.com
         </a>
       </div>
@@ -88,7 +88,7 @@ export default function ContactPage() {
             value={formData.name}
             onChange={handleChange}
             placeholder="名前を入力してください。"
-            className="border rounded w-full p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className="border rounded w-full p-3 focus:ring-2 focus:ring-green-500 focus:border-green-500"
             required
           />
         </div>
@@ -104,7 +104,7 @@ export default function ContactPage() {
             value={formData.email}
             onChange={handleChange}
             placeholder="example@email.com"
-            className="border rounded w-full p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className="border rounded w-full p-3 focus:ring-2 focus:ring-green-500 focus:border-green-500"
             required
           />
         </div>
@@ -120,7 +120,7 @@ export default function ContactPage() {
             onChange={handleChange}
             placeholder="お問い合わせ内容を詳しく入力してください。"
             rows={5}
-            className="border rounded w-full p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className="border rounded w-full p-3 focus:ring-2 focus:ring-green-500 focus:border-green-500"
             required
           />
         </div>
@@ -131,7 +131,7 @@ export default function ContactPage() {
           className={`w-full p-3 rounded font-semibold transition-colors ${
             isSubmitting
               ? 'bg-gray-400 cursor-not-allowed'
-              : 'bg-blue-600 hover:bg-blue-700 text-white'
+              : 'bg-green-600 hover:bg-green-700 text-white'
           }`}
         >
           {isSubmitting ? '전송중...' : '문의 보내기'}
@@ -139,9 +139,9 @@ export default function ContactPage() {
       </form>
 
       <div className="mt-10 space-y-4 text-sm text-gray-600">
-        <div className="bg-blue-50 p-4 rounded border border-blue-200">
-          <h3 className="font-semibold text-blue-800 mb-2">📧 お問い合わせ後の流れ</h3>
-          <ol className="list-decimal list-inside space-y-1 text-blue-700">
+        <div className="bg-green-50 p-4 rounded border border-green-200">
+          <h3 className="font-semibold text-green-800 mb-2">📧 お問い合わせ後の流れ</h3>
+          <ol className="list-decimal list-inside space-y-1 text-green-700">
           <li>送信完了後、確認メールが届きます</li>
   <li>内容を確認のうえ、24時間以内にご返信いたします</li>
   <li>お急ぎの場合は、直接メールでも対応可能です</li>

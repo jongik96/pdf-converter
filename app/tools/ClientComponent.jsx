@@ -118,7 +118,7 @@ export default function ToolsPage() {
                         <h3 className="font-semibold text-gray-900 mb-2">{tool.name}</h3>
                         <p className="text-sm text-gray-600 mb-4">{tool.description}</p>
                         <div
-                          className="flex items-center justify-center text-blue-600 text-sm font-medium">
+                          className="flex items-center justify-center text-green-600 text-sm font-medium">
                           変換へ進む <ArrowRight className="w-4 h-4 ml-1" />
                         </div>
                       </CardContent>
