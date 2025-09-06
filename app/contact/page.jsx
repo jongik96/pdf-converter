@@ -87,7 +87,7 @@ export default function ContactPage() {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="이름을 입력해주세요"
+            placeholder="名前を入力してください。"
             className="border rounded w-full p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             required
           />
@@ -118,7 +118,7 @@ export default function ContactPage() {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="문의내용을 자세히 입력해주세요"
+            placeholder="お問い合わせ内容を詳しく入力してください。"
             rows={5}
             className="border rounded w-full p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             required
