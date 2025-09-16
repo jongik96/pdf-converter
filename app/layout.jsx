@@ -65,7 +65,15 @@ export default function RootLayout({ children }) {
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
-        <Analytics />
+        <Analytics 
+          beforeSend={(event) => {
+            // 개인정보 보호를 위한 IP 주소 마스킹
+            if (event.url) {
+              event.url = event.url.replace(/\?.*$/, '');
+            }
+            return event;
+          }}
+        />
         <Script
           id="adsense-script"
           async

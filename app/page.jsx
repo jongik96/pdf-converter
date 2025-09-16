@@ -2,8 +2,14 @@
 
 import WizardClient from "@/components/WizardClient";
 import SchemaFAQ from "@/components/SchemaFAQ";
+import { trackPageView } from "@/lib/analytics";
+import { useEffect } from "react";
 
 export default function Page() {
+  useEffect(() => {
+    trackPageView('home');
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100"> 
 
