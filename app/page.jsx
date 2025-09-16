@@ -1,3 +1,5 @@
+"use client";
+
 // app/page.jsx 또는 app/page.tsx
 
 import WizardClient from "@/components/WizardClient";
