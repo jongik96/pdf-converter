@@ -2,7 +2,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { Analytics } from "@vercel/analytics/react"
+import AnalyticsWrapper from "@/components/AnalyticsWrapper"
 import Script from "next/script"
 import SchemaOrganization from "@/components/SchemaOrganization";
 import SchemaWebApp from "@/components/SchemaWebApp";
@@ -65,15 +65,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
-        <Analytics 
-          beforeSend={(event) => {
-            // 개인정보 보호를 위한 IP 주소 마스킹
-            if (event.url) {
-              event.url = event.url.replace(/\?.*$/, '');
-            }
-            return event;
-          }}
-        />
+        <AnalyticsWrapper />
         <Script
           id="adsense-script"
           async
