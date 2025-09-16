@@ -51,9 +51,8 @@ export const metadata = {
     ],
   },
   other: {
-    "google-adsense-account": "ca-pub-8843011911940029",
+    "google-adsense-account": "ca-pub-2232732758246542",
     "naver-site-verification": "a15e9c24bed6fa364370353014afb579be302a6a",
-    "google-site-verification": "ca-pub-8843011911940029",
   },
 }
 
@@ -70,7 +69,7 @@ export default function RootLayout({ children }) {
         <Script
           id="adsense-script"
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8843011911940029"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2232732758246542"
           crossOrigin="anonymous"
         />
         {/* 네이버 애널리틱스 lazyOnload 적용 */}
@@ -86,6 +85,26 @@ export default function RootLayout({ children }) {
               if (!wcs_add) var wcs_add = {};
               wcs_add["wa"] = "82a9610ad38048";
               if (window.wcs) { wcs_do(); }
+            `,
+          }}
+        />
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-MCP4X0SJ8P`}
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-MCP4X0SJ8P', {
+                page_title: document.title,
+                page_location: window.location.href,
+              });
             `,
           }}
         />
