@@ -5,7 +5,7 @@ export default function ContactPage() {
       <p className="mb-8 text-gray-700">
         ドキュメントキングのサービスに関するご質問、ご要望、不具合のご報告など、
         どのようなお問い合わせも大歓迎です。<br />
-        下記のメールアドレスよりご連絡いただければ、迅速にご回答いたします。
+        下記のボタンからご連絡いただければ、迅速にご回答いたします。
       </p>
       
       {/* 이메일 문의 안내 */}
@@ -13,23 +13,15 @@ export default function ContactPage() {
         <div className="text-center">
           <h2 className="text-2xl font-bold text-green-800 mb-4">📧 メールでお問い合わせ</h2>
           <p className="text-gray-700 mb-6">
-            以下のボタンをクリックすると、お使いのメールクライアントが起動します。
+            以下のボタンをクリックすると、お使いのメールクライアントが起動します。<br />
+            お気軽にお問い合わせください。
           </p>
           <a 
             href="mailto:pji3503@gmail.com?subject=ドキュメントキングお問い合わせ&body=お名前：%0D%0A%0D%0Aメールアドレス：%0D%0A%0D%0Aお問い合わせ内容：%0D%0A"
             className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg"
           >
-            メールを送る
+            お問い合わせメールを送る
           </a>
-          <div className="mt-6 p-4 bg-white/80 rounded-lg inline-block">
-            <p className="text-sm text-gray-600 mb-2">またはこちらにメール送信：</p>
-            <a 
-              href="mailto:pji3503@gmail.com" 
-              className="text-green-700 underline font-mono text-lg font-semibold hover:text-green-800"
-            >
-              pji3503@gmail.com
-            </a>
-          </div>
         </div>
       </div>
 
