@@ -25,10 +25,11 @@ export const metadata = {
     siteName: "ドキュメントキング",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://pdfers.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "ドキュメントキングメイン画像",
+        type: "image/png",
       },
     ],
     locale: "ja_JP",
@@ -38,7 +39,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "ドキュメントキング - 無料ファイル変換機",
     description: "PDF、画像、文書を簡単で高速に無料変換！",
-    images: ["/og-image.png"],
+    images: ["https://pdfers.com/og-image.png"],
   },
   icons: {
     icon: "/favicon.ico",
@@ -53,12 +54,33 @@ export const metadata = {
   other: {
     "google-adsense-account": "ca-pub-2232732758246542",
     "naver-site-verification": "a15e9c24bed6fa364370353014afb579be302a6a",
+    // 카카오톡 공유를 위한 추가 메타데이터
+    "og:image": "https://pdfers.com/og-image.png",
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:image:type": "image/png",
+    "og:image:alt": "ドキュメントキングメイン画像",
+    // 추가 소셜미디어 지원
+    "twitter:image": "https://pdfers.com/og-image.png",
+    "twitter:image:alt": "ドキュメントキングメイン画像",
   },
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
+      <head>
+        {/* 카카오톡 및 소셜미디어 공유를 위한 추가 메타태그 */}
+        <meta property="og:image" content="https://pdfers.com/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="ドキュメントキングメイン画像" />
+        <meta name="twitter:image" content="https://pdfers.com/og-image.png" />
+        <meta name="twitter:image:alt" content="ドキュメントキングメイン画像" />
+        {/* 카카오톡 특별 지원 */}
+        <meta name="kakao:image" content="https://pdfers.com/og-image.png" />
+      </head>
       <body className={inter.className}>
         <SchemaOrganization />
         <SchemaWebApp />
