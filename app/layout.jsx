@@ -68,7 +68,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ko">
+    <html lang="ja">
       <head>
         {/* 카카오톡 및 소셜미디어 공유를 위한 추가 메타태그 */}
         <meta property="og:image" content="https://pdfers.com/og-image.png" />

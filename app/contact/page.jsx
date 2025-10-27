@@ -18,9 +18,9 @@ export default function ContactPage() {
           </p>
           <a 
             href="mailto:pji3503@gmail.com?subject=ドキュメントキングお問い合わせ&body=お名前：%0D%0A%0D%0Aメールアドレス：%0D%0A%0D%0Aお問い合わせ内容：%0D%0A"
-            className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg"
+            className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-4 px-8 rounded-xl transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
-            お問い合わせメールを送る
+            ✉️ お問い合わせメールを送る
           </a>
         </div>
       </div>
