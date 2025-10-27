@@ -3,7 +3,7 @@ export default function ContactPage() {
     <div className="max-w-2xl mx-auto py-12 px-4">
       <h1 className="text-3xl font-bold mb-6">お問い合わせ</h1>
       <p className="mb-8 text-gray-700">
-        ドキュメントキングのサービスに関するご質問、ご要望、不具合のご報告など、
+        PDFerのサービスに関するご質問、ご要望、不具合のご報告など、
         どのようなお問い合わせも大歓迎です。<br />
         下記のボタンからご連絡いただければ、迅速にご回答いたします。
       </p>
@@ -17,7 +17,7 @@ export default function ContactPage() {
             お気軽にお問い合わせください。
           </p>
           <a 
-            href="mailto:pji3503@gmail.com?subject=ドキュメントキングお問い合わせ&body=お名前：%0D%0A%0D%0Aメールアドレス：%0D%0A%0D%0Aお問い合わせ内容：%0D%0A"
+            href="mailto:pji3503@gmail.com?subject=PDFerお問い合わせ&body=お名前：%0D%0A%0D%0Aメールアドレス：%0D%0A%0D%0Aお問い合わせ内容：%0D%0A"
             className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-4 px-8 rounded-xl transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
             ✉️ お問い合わせメールを送る

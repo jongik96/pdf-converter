@@ -51,7 +51,7 @@ const menu = [
   },
   { name: "すべてのツール", href: "/tools" },
   { 
-    name: "ドキュメントキング", children: [
+    name: "PDFer", children: [
       {name: "紹介", href: "/about"},
       {name: "利用規約", href: "/terms"},
       {name: "プライバシーポリシー", href: "/privacy"},
@@ -120,7 +120,7 @@ export function Header() {
           {/* Logo */}
           <a href="/" className="flex items-center space-x-2">
             <FileText className="w-9 h-9 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">ドキュメントキング</span>
+            <span className="text-2xl font-bold text-gray-900">PDFer</span>
           </a>
 
           {/* Desktop Navigation (중앙 정렬) */}

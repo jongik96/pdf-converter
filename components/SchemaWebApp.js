@@ -8,12 +8,12 @@ export default function SchemaWebApp() {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          "name": "ドキュメントキング",
+          "name": "PDFer",
           "url": "https://pdfers.com/",
           "applicationCategory": "BusinessApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works on Chrome, Safari, Edge, Firefox, Mobile browsers.",
-          "description": "ドキュメントキングはPDF、Word、Excel、画像など多様なファイルを簡単で高速に変換する100%無料オンライン変換ツールです。",
+          "description": "PDFerはPDF、Word、Excel、画像など多様なファイルを簡単で高速に変換する100%無料オンライン変換ツールです。",
           "inLanguage": "ja",
           "offers": {
             "@type": "Offer",
@@ -22,12 +22,12 @@ export default function SchemaWebApp() {
           },
           "author": {
             "@type": "Organization",
-            "name": "ドキュメントキング",
+            "name": "PDFer",
             "url": "https://pdfers.com/"
           },
           "publisher": {
             "@type": "Organization",
-            "name": "ドキュメントキング",
+            "name": "PDFer",
             "url": "https://pdfers.com/"
           },
           "aggregateRating": {

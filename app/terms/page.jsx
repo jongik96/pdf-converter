@@ -1,27 +1,27 @@
 export const metadata = {
-  title: "利用規約 | ドキュメントキング",
-  description: "ドキュメントキングサービスの利用規約をご案内いたします。",
+  title: "利用規約 | PDFer",
+  description: "PDFerサービスの利用規約をご案内いたします。",
   keywords: [
-    "ドキュメントキング", "利用規約", "サービス規約", "無料ファイル変換", "ドキュメントキング利用規定", "ドキュメントキングポリシー"
+    "PDFer", "利用規約", "サービス規約", "無料ファイル変換", "PDFer利用規定", "PDFerポリシー"
   ],
   alternates: {
     canonical: "https://pdfers.com/terms",
   },
   openGraph: {
-    title: "利用規約 | ドキュメントキング",
-    description: "ドキュメントキングサービスの利用規約をご案内いたします。",
+    title: "利用規約 | PDFer",
+    description: "PDFerサービスの利用規約をご案内いたします。",
     url: "https://pdfers.com/terms",
     images: [
-      { url: "/og-image.png", width: 1200, height: 630, alt: "ドキュメントキング利用規約" }
+      { url: "/og-image.png", width: 1200, height: 630, alt: "PDFer利用規約" }
     ],
-    siteName: "ドキュメントキング",
+    siteName: "PDFer",
     locale: "ja_JP",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "利用規約 | ドキュメントキング",
-    description: "ドキュメントキングサービスの利用規約をご案内いたします。",
+    title: "利用規約 | PDFer",
+    description: "PDFerサービスの利用規約をご案内いたします。",
     images: ["/og-image.png"]
   }
 };
@@ -34,7 +34,7 @@ export default function TermsPage() {
         <li>
           <b>サービス概要</b>
           <ul className="list-disc ml-6 mt-2">
-            <li>ドキュメントキングは、誰でも自由に利用できる無料ファイル変換サービスです。</li>
+            <li>PDFerは、誰でも自由に利用できる無料ファイル変換サービスです。</li>
             <li>会員登録およびログイン手続きなしで利用可能です。</li>
           </ul>
         </li>

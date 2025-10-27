@@ -1,27 +1,27 @@
 export const metadata = {
-  title: "個人情報処理方針 | 文書キング",
-  description: "文書キングは最小限の個人情報のみを安全に保護しています。",
+  title: "個人情報処理方針 | PDFer",
+  description: "PDFerは最小限の個人情報のみを安全に保護しています。",
   keywords: [
-    "文書キング個人情報", "個人情報処理方針", "個人情報保護", "文書キング", "文書キング個人情報方針"
+    "PDFer個人情報", "個人情報処理方針", "個人情報保護", "PDFer", "PDFer個人情報方針"
   ],
   alternates: {
     canonical: "https://www.pdfers.com/privacy",
   },
   openGraph: {
-    title: "個人情報処理方針 | 文書キング",
-    description: "文書キングは最小限の個人情報のみを安全に保護しています。",
+    title: "個人情報処理方針 | PDFer",
+    description: "PDFerは最小限の個人情報のみを安全に保護しています。",
     url: "https://www.pdfers.com/privacy",
     images: [
-      { url: "/og-image.png", width: 1200, height: 630, alt: "文書キング個人情報処理方針" }
+      { url: "/og-image.png", width: 1200, height: 630, alt: "PDFer個人情報処理方針" }
     ],
-    siteName: "文書キング",
+    siteName: "PDFer",
     locale: "ja_JP",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "個人情報処理方針 | 文書キング",
-    description: "文書キングは最小限の個人情報のみを安全に保護しています。",
+    title: "個人情報処理方針 | PDFer",
+    description: "PDFerは最小限の個人情報のみを安全に保護しています。",
     images: ["/og-image.png"]
   }
 };
@@ -31,7 +31,7 @@ export default function PrivacyPage() {
     <div className="max-w-2xl mx-auto py-12 px-4">
       <h1 className="text-3xl font-bold mb-6">個人情報処理方針</h1>
       <p className="mb-6 text-gray-700">
-        文書キング（以下「サイト」）は利用者の個人情報を何よりも大切に考えています。<br />
+        PDFer（以下「サイト」）は利用者の個人情報を何よりも大切に考えています。<br />
         個人情報保護法など関連法令を遵守し、個人情報を最小限に収集し安全に管理しています。
       </p>
       <ol className="list-decimal ml-6 space-y-4 text-sm">

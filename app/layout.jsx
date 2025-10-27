@@ -10,25 +10,25 @@ import SchemaWebApp from "@/components/SchemaWebApp";
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "ドキュメントキング - 無料ファイル変換機",
-  description: "ドキュメントキングでPDF、Word、Excel、PowerPoint、画像ファイルを簡単で高速に無料で変換してください。インストール・会員登録なしで完全無料！国内サーバーを運営しているため、どこよりも高速な速度を楽しめます！",
+  title: "PDFer - 無料ファイル変換機",
+  description: "PDFerでPDF、Word、Excel、PowerPoint、画像ファイルを簡単で高速に無料で変換してください。インストール・会員登録なしで完全無料！国内サーバーを運営しているため、どこよりも高速な速度を楽しめます！",
   keywords: [
-    "ドキュメントキング", "ファイル変換", "PDF変換", "画像変換", "文書変換機", "ウェブ変換ツール", "jpg png heic pdf xlsx ppt"
+    "PDFer", "ファイル変換", "PDF変換", "画像変換", "文書変換機", "ウェブ変換ツール", "jpg png heic pdf xlsx ppt"
   ],
   alternates: {
     canonical: "https://pdfers.com/"
   },
   openGraph: {
-    title: "ドキュメントキング - 無料ファイル変換機",
+    title: "PDFer - 無料ファイル変換機",
     description: "PDF、画像、文書を簡単で高速に無料変換！",
     url: "https://pdfers.com",
-    siteName: "ドキュメントキング",
+    siteName: "PDFer",
     images: [
       {
         url: "https://pdfers.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "ドキュメントキングメイン画像",
+        alt: "PDFerメイン画像",
         type: "image/png",
       },
     ],
@@ -37,7 +37,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ドキュメントキング - 無料ファイル変換機",
+    title: "PDFer - 無料ファイル変換機",
     description: "PDF、画像、文書を簡単で高速に無料変換！",
     images: ["https://pdfers.com/og-image.png"],
   },
@@ -75,9 +75,9 @@ export default function RootLayout({ children }) {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:alt" content="ドキュメントキングメイン画像" />
+        <meta property="og:image:alt" content="PDFerメイン画像" />
         <meta name="twitter:image" content="https://pdfers.com/og-image.png" />
-        <meta name="twitter:image:alt" content="ドキュメントキングメイン画像" />
+        <meta name="twitter:image:alt" content="PDFerメイン画像" />
         {/* 카카오톡 특별 지원 */}
         <meta name="kakao:image" content="https://pdfers.com/og-image.png" />
       </head>

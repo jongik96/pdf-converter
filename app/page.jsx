@@ -50,7 +50,7 @@ export default function Page() {
 
       {/* 특징 및 신뢰/FAQ – FAQ 디자인 개선 */}
       <section className="max-w-3xl mx-auto mt-16 mb-28 px-4">
-        <h2 className="text-2xl font-bold mb-8 text-green-800 text-center">✨ ドキュメントキングが特別な理由</h2>
+        <h2 className="text-2xl font-bold mb-8 text-green-800 text-center">✨ PDFerが特別な理由</h2>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700 mb-10">
           <li className="flex items-start gap-3 bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-2xl border-2 border-green-100 hover:shadow-lg transition">
             <span className="text-3xl">💯</span>
@@ -83,7 +83,7 @@ export default function Page() {
                 <span>Q. ドキュメントキングは本当に無料ですか？</span>
             </div>
             <div className="text-base md:text-lg leading-relaxed tracking-normal text-gray-800">
-                はい、<b className="text-green-700 font-semibold">ドキュメントキング</b>のすべての<b>文書変換</b>および<b>画像変換</b>サービスは100%<b className="text-green-700 font-semibold">無料</b>です。
+                はい、<b className="text-green-700 font-semibold">PDFer</b>のすべての<b>文書変換</b>および<b>画像変換</b>サービスは100%<b className="text-green-700 font-semibold">無料</b>です。
                 会員登録やインストールなしで誰でもすぐに利用でき、PDF、Word、Excel、画像など多様なファイルを自由に変換できます。<br />
                 有料決済、隠れた費用なしで本当に無料で安全に使用してください。
             </div>
@@ -94,7 +94,7 @@ export default function Page() {
                 <span>Q. ファイルはどこに保存されますか？</span>
             </div>
             <div className="text-base md:text-lg leading-relaxed tracking-normal text-gray-800">
-                <b className="text-green-700 font-semibold">ドキュメントキング</b>にアップロードされたファイルは変換後1時間後に自動削除され、サーバーにも残りません。
+                <b className="text-green-700 font-semibold">PDFer</b>にアップロードされたファイルは変換後1時間後に自動削除され、サーバーにも残りません。
                 すべてのファイルは暗号化(SSL)で安全に送信され、外部漏洩のリスクがない安全な<b>文書セキュリティ</b>環境を提供します。<br />
                 個人情報保護とファイルセキュリティを最優先に考える信頼できる変換サービスです。
             </div>
@@ -105,7 +105,7 @@ export default function Page() {
                 <span>Q. モバイルも対応していますか？</span>
             </div>
             <div className="text-base md:text-lg leading-relaxed tracking-normal text-gray-800">
-                はい、<b className="text-green-700 font-semibold">ドキュメントキング</b>はPC、モバイル、タブレットなどすべてのデバイスで完璧に動作します。<br />
+                はい、<b className="text-green-700 font-semibold">PDFer</b>はPC、モバイル、タブレットなどすべてのデバイスで完璧に動作します。<br />
                 スマートフォンでもPDF変換、画像変換など多様な機能を簡単に使用でき、いつでもどこでも高速で便利にファイル変換が可能です。
             </div>
             </li>
@@ -115,7 +115,7 @@ export default function Page() {
                 <span>Q. 対応しているファイル形式は？</span>
             </div>
             <div className="text-base md:text-lg leading-relaxed tracking-normal text-gray-800">
-                <b className="text-green-700 font-semibold">ドキュメントキング</b>ではPDF、DOCX(Word)、XLSX(Excel)、CSV、PPT、JPG、PNG、HEIC、WEBPなど多様なファイルの変換に対応しています。<br />
+                <b className="text-green-700 font-semibold">PDFer</b>ではPDF、DOCX(Word)、XLSX(Excel)、CSV、PPT、JPG、PNG、HEIC、WEBPなど多様なファイルの変換に対応しています。<br />
                 文書変換、画像変換、圧縮、サイズ調整など多様な機能を業務、課題、レポート、SNSなど様々な状況で自由に活用できます。
             </div>
             </li>
@@ -153,7 +153,7 @@ export default function Page() {
         <a href="#wizard" className="inline-block px-10 py-4 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white rounded-2xl font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all text-lg">
           🚀 ファイル変換すぐに開始 &rarr;
         </a>
-        <p className="mt-4 text-gray-700 text-sm md:text-base">会員登録、インストールなしで完全無料！必要な時、ドキュメントキング！</p>
+        <p className="mt-4 text-gray-700 text-sm md:text-base">会員登録、インストールなしで完全無料！必要な時、PDFer！</p>
       </div>
     </div>
   );

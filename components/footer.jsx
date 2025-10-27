@@ -10,7 +10,7 @@ export function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
               <FileText className="w-6 h-6 text-green-400" />
-              <span className="text-lg font-bold">ドキュメントキング</span>
+              <span className="text-lg font-bold">PDFer</span>
             </Link>
             <p className="text-gray-400 text-sm">
               無料で簡単で高速に文書と画像を変換してください。<br />
@@ -68,7 +68,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; 2025 ドキュメントキング. All rights reserved.</p>
+          <p>&copy; 2025 PDFer. All rights reserved.</p>
         </div>
       </div>
     </footer>

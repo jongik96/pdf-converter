@@ -40,10 +40,10 @@ export default function AboutPage() {
       <div className="bg-gradient-to-br from-green-50 to-emerald-100">
         <div className="container mx-auto px-4 py-16">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">ドキュメントキング紹介</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">PDFer紹介</h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 インストールも、会員登録も不要です。クリック数回で完了。<br />
-                国内代表無料文書変換サイトドキュメントキング。<br /><br />
+                国内代表無料文書変換サイトPDFer。<br /><br />
 
                 <strong>すべての機能100%無料。</strong><br />
                 使ってみるとなぜ皆が絶賛するかすぐに分かります。<br />
@@ -56,9 +56,9 @@ export default function AboutPage() {
       {/* Features Section */}
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">ドキュメントキング！選ぶべき理由</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">PDFer！選ぶべき理由</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            ドキュメントキングは安定性、使用利便性、セキュリティ、品質すべての面で最高のWebベースファイル変換プラットフォームを追求します。
+            PDFerは安定性、使用利便性、セキュリティ、品質すべての面で最高のWebベースファイル変換プラットフォームを追求します。
           </p>
         </div>
 
@@ -78,10 +78,10 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">ドキュメントキング物語</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">PDFer物語</h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  ドキュメントキングは単純な文書変換サイトではありません。<br />
+                  PDFerは単純な文書変換サイトではありません。<br />
                   <strong>'なぜこんなに複雑でなければならないのか？'</strong><br />
                   私たちは既存の遅く、複雑で、信頼できなかった変換サービスに不満を持って始めました。
                 </p>
@@ -99,21 +99,21 @@ export default function AboutPage() {
                   どのようなデバイスでも、どのような年齢層でも、誰でも数秒で変換できます。
                 </p>
                 <p>
-                  そしてドキュメントキングは海外サービスとは違います。<br />
+                  そしてPDFerは海外サービスとは違います。<br />
                   国内ユーザーのみのための、国内専用文書変換サービスです。<br />
                   海外にサーバーがあるサービスと比較してはいけません。<br />
-                  <strong>ドキュメントキングは国内に位置するサーバーを使用するため、どのサイトよりも高速な速度を誇ります。</strong>
+                  <strong>PDFerは国内に位置するサーバーを使用するため、どのサイトよりも高速な速度を誇ります。</strong>
                 </p>
                 <p>
                   複雑な世界で、シンプルさは競争力です。<br />
-                  文書変換？今はドキュメントキング一つで十分です。
+                  文書変換？今はPDFer一つで十分です。
                 </p>
               </div>
             </div>
               <div
                 className="bg-gradient-to-br from-green-100 to-emerald-200 rounded-2xl p-8 text-center">
                 <div className="text-6xl mb-4">🚀</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">ドキュメントキング対応拡張子</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">PDFer対応拡張子</h3>
                 <p className="text-gray-700 mb-3">
                   誰でも、どのような環境でも簡単にファイル変換ができるように。<br />
                   専門知識がなくても、デバイス性能と関係なく最高品質を提供します。
@@ -129,7 +129,7 @@ export default function AboutPage() {
         {/* Values Section */}
         <div className="mt-20">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">ドキュメントキングの約束</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">PDFerの約束</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card>
@@ -146,7 +146,7 @@ export default function AboutPage() {
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">完全無料、誰でも利用</h3>
                 <p className="text-gray-600">
-                  ドキュメントキングの核心サービスは今後も無料で提供されます。<br />
+                  PDFerの核心サービスは今後も無料で提供されます。<br />
                   誰でも負担なく利用してみることをお勧めします。
                 </p>
               </CardContent>
