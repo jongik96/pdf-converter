@@ -8,11 +8,11 @@ export default function SchemaOrganization() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "PDFer",
-            legalName: "PDFer",
+            name: "ドキュメントキング",
+            legalName: "ドキュメントキング",
             url: "https://pdfers.com",
             logo: "https://pdfers.com/og-image.png",
-            description: "PDFerはPDF、Word、Excel、画像など多様なファイルを簡単で高速に無料で変換できる国内1位Webサービスです。",
+            description: "ドキュメントキングはPDF、Word、Excel、画像など多様なファイルを簡単で高速に無料で変換できる国内1位Webサービスです。",
             email: "contact@pdfers.com",
             sameAs: [
               "https://pdfers.com",
@@ -37,7 +37,7 @@ export default function SchemaOrganization() {
             // 브랜드 또는 서비스명 여러 개 쓸 경우:
             brand: {
               "@type": "Brand",
-              name: "PDFer"
+              name: "ドキュメントキング"
             },
             // 서비스 설명 추가
             serviceArea: {
@@ -57,13 +57,13 @@ export default function SchemaOrganization() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            name: "PDFer",
+            name: "ドキュメントキング",
             url: "https://pdfers.com",
-            description: "PDFerは国内無料文書/画像変換サービスです。会員登録、インストールなしで簡単で高速にファイル変換！",
+            description: "ドキュメントキングは国内無料文書/画像変換サービスです。会員登録、インストールなしで簡単で高速にファイル変換！",
             inLanguage: "ja",
             publisher: {
               "@type": "Organization",
-              name: "PDFer"
+              name: "ドキュメントキング"
             },
             potentialAction: {
               "@type": "SearchAction",

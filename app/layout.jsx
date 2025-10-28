@@ -54,6 +54,7 @@ export const metadata = {
   other: {
     "google-adsense-account": "ca-pub-8843011911940029",
     "naver-site-verification": "a15e9c24bed6fa364370353014afb579be302a6a",
+    "google-site-verification": "yqkVQBxT2fP3xB4pWMOxF8qs71zX_7uhUwNASymtdBA",
     // 카카오톡 공유를 위한 추가 메타데이터
     "og:image": "https://pdfers.com/og-image.png",
     "og:image:width": "1200",
@@ -70,6 +71,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ja">
       <head>
+        {/* Google Search Console Verification */}
+        <meta name="google-site-verification" content="yqkVQBxT2fP3xB4pWMOxF8qs71zX_7uhUwNASymtdBA" />
         {/* 카카오톡 및 소셜미디어 공유를 위한 추가 메타태그 */}
         <meta property="og:image" content="https://pdfers.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
