@@ -7,12 +7,12 @@ export const metadata = {
     "PDF分割", "PDF分割", "PDF分割", "PDF複数に", "PDF範囲分割", "無料PDF分割", "文書キング"
   ],
   alternates: {
-    canonical: "https://www.pdfers.com/pdf-split",
+    canonical: "https://pdfers.com/pdf-split",
   },
   openGraph: {
     title: "PDF分割 - 希望のページ範囲で分割 | 文書キング",
     description: "ページ範囲を入力してPDFを複数に分割！希望の部分のみを選んで安全に分割してください。",
-    url: "https://www.pdfers.com/pdf-split",
+    url: "https://pdfers.com/pdf-split",
     images: [
       { url: "/og-image.png", width: 1200, height: 630, alt: "PDF分割" }
     ],

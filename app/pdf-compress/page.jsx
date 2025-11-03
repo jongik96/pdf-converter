@@ -7,12 +7,12 @@ export const metadata = {
     "PDF圧縮", "PDF容量削減", "無料PDF圧縮", "PDFファイルサイズ削減", "PDF軽量化", "文書キング"
   ],
   alternates: {
-    canonical: "https://www.pdfers.coms/pdf-compress",
+    canonical: "https://pdfers.com/pdf-compress",
   },
   openGraph: {
     title: "PDF容量削減 - 無料PDF圧縮 | 文書キング",
     description: "PDFファイルをクリック一つで超簡単圧縮！高画質維持、高速処理、無料提供。モバイル・PCどこでも使用。",
-    url: "https://www.pdfers.com/pdf-compress",
+    url: "https://pdfers.com/pdf-compress",
     images: [
       { url: "/og-image.png", width: 1200, height: 630, alt: "PDF容量削減" }
     ],

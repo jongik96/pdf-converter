@@ -1,31 +1,30 @@
 import ClientComponent from "./ClientComponent";
 
-// app/image-compress/page.jsx 상단에 추가
 export const metadata = {
-  title: "画像容量削減 - JPG、PNG、HEIC、WEBP無料圧縮 | ドキュメントキング",
-  description: "画像品質を調整して容量を1/10まで削減してください！JPG、PNG、WEBP、HEICなど多様な形式対応、完全無料。ファイル損失のない高品質画像圧縮、ドキュメントキングで高速で簡単に！",
+  title: "画像サイズ調整 - JPG、PNG、HEIC、WEBP無料リサイズ | 文書キング",
+  description: "画像サイズを自由に調整してください！JPG、PNG、WEBP、HEICなど多様な形式対応、完全無料。アスペクト比維持、高品質画像リサイズ、文書キングで高速で簡単に！",
   keywords: [
-    "画像圧縮", "JPG圧縮", "PNG圧縮", "HEIC圧縮", "WEBP圧縮",
-    "無料画像容量削減", "画像品質調整", "画像最適化", "ドキュメントキング"
+    "画像リサイズ", "画像サイズ調整", "JPGリサイズ", "PNGリサイズ", "HEICリサイズ", "WEBPリサイズ",
+    "無料画像サイズ変更", "画像サイズ変更", "画像最適化", "文書キング"
   ],
   alternates: {
-    canonical: "https://pdfers.com/image-compress",
+    canonical: "https://pdfers.com/image-resize",
   },
   openGraph: {
-    title: "画像容量削減 - JPG、PNG、HEIC、WEBP無料圧縮 | ドキュメントキング",
-    description: "JPG、PNG、HEIC、WEBP画像を高品質で高速圧縮！無料で簡単で高速に画像容量を削減してみてください。",
-    url: "https://pdfers.com/image-compress",
+    title: "画像サイズ調整 - JPG、PNG、HEIC、WEBP無料リサイズ | 文書キング",
+    description: "JPG、PNG、HEIC、WEBP画像を高品質で高速リサイズ！無料で簡単で高速に画像サイズを調整してみてください。",
+    url: "https://pdfers.com/image-resize",
     images: [
-      { url: "/og-image.png", width: 1200, height: 630, alt: "画像容量削減" }
+      { url: "/og-image.png", width: 1200, height: 630, alt: "画像サイズ調整" }
     ],
-    siteName: "ドキュメントキング",
+    siteName: "文書キング",
     locale: "ja_JP",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "画像容量削減 - JPG、PNG、HEIC、WEBP無料圧縮 | ドキュメントキング",
-    description: "JPG、PNG、HEIC、WEBP画像を高品質で高速圧縮！無料で簡単で高速に画像容量を削減してみてください。",
+    title: "画像サイズ調整 - JPG、PNG、HEIC、WEBP無料リサイズ | 文書キング",
+    description: "JPG、PNG、HEIC、WEBP画像を高品質で高速リサイズ！無料で簡単で高速に画像サイズを調整してみてください。",
     images: ["/og-image.png"]
   }
 };
