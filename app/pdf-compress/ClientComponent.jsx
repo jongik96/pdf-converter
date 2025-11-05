@@ -251,6 +251,59 @@ export default function PdfCompressPage() {
             </CardContent>
           </Card>
         </div>
+
+        {/* 상세 설명 섹션 */}
+        <div className="max-w-4xl mx-auto mt-16 px-4 space-y-8">
+          <section className="bg-white rounded-2xl p-8 shadow-lg">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">PDF圧縮とは？</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              PDF圧縮は、PDFファイルのサイズを削減して軽量化する機能です。大容量のPDFファイルをメールで送信したり、ウェブサイトにアップロードしたりする際に非常に便利です。PDFerの無料PDF圧縮ツールを使用すると、画質を保ちながらファイルサイズを最大90%まで削減できます。
+            </p>
+            <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">PDF圧縮のメリット</h3>
+            <ul className="space-y-2 text-gray-700">
+              <li className="flex items-start">
+                <span className="text-green-600 mr-2">✓</span>
+                <span>メール送信が容易になります - 大容量ファイルも軽量化して送信可能</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-600 mr-2">✓</span>
+                <span>ストレージ節約 - クラウドやデバイスの容量を効率的に使用</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-600 mr-2">✓</span>
+                <span>ウェブアップロード速度向上 - ファイルサイズが小さくなり、アップロードが速い</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-600 mr-2">✓</span>
+                <span>共有が簡単 - 軽量PDFは共有やダウンロードが速い</span>
+              </li>
+            </ul>
+          </section>
+
+          <section className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 shadow-lg">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">よくある質問</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Q. PDF圧縮で画質は劣化しますか？</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  高品質モードでは画質を最大限に維持しながら圧縮します。最大圧縮モードでは画質を多少犠牲にしますが、ファイルサイズを大幅に削減できます。用途に応じて圧縮レベルを選択できます。
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Q. どのくらいのサイズまで圧縮できますか？</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  ファイルの内容によって異なりますが、平均的に50-90%のサイズ削減が可能です。画像が多いPDFほど圧縮効果が高く、テキスト中心のPDFは圧縮効果が低い傾向があります。
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Q. 圧縮されたPDFは安全ですか？</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  はい、完全に安全です。アップロードされたファイルは変換後1時間以内に自動削除され、サーバーに保存されません。すべての通信はSSL暗号化で保護されています。
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   );

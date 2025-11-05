@@ -2,7 +2,7 @@ import ClientComponent from "./ClientComponent";
 
 export const metadata = {
   title: "PDF容量削減 - 無料PDF圧縮 | 文書キング",
-  description: "PDFファイルを最大90%まで圧縮！高画質から超軽量まで、品質劣化最小化で素早く簡単にPDF容量を削減しましょう。100%無料、インストール不要。",
+  description: "PDFファイルを最大90%まで圧縮！高画質から超軽量まで、品質劣化最小化で素早く簡単にPDF容量を削減しましょう。100%無料、インストール不要。PDF圧縮ツールでメール送信、ウェブアップロード、ストレージ節約を簡単に。PDFerの無料PDF圧縮サービスで、大容量PDFファイルを高速で軽量化できます。",
   keywords: [
     "PDF圧縮", "PDF容量削減", "無料PDF圧縮", "PDFファイルサイズ削減", "PDF軽量化", "文書キング"
   ],

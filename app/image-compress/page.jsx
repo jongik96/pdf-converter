@@ -3,7 +3,7 @@ import ClientComponent from "./ClientComponent";
 // app/image-compress/page.jsx 상단에 추가
 export const metadata = {
   title: "画像容量削減 - JPG、PNG、HEIC、WEBP無料圧縮 | 文書キング",
-  description: "画像品質を調整して容量を1/10まで削減しましょう！JPG、PNG、WEBP、HEICなど様々なフォーマット対応、完全無料。ファイル損失のない高品質画像圧縮、文書キングで素早く簡単に！",
+  description: "画像品質を調整して容量を1/10まで削減しましょう！JPG、PNG、WEBP、HEICなど様々なフォーマット対応、完全無料。ファイル損失のない高品質画像圧縮、文書キングで素早く簡単に！SNS投稿、ウェブサイト最適化、メール送信などに最適。画質を保ちながらファイルサイズを大幅に削減できる無料画像圧縮ツールです。",
   keywords: [
     "画像圧縮", "JPG圧縮", "PNG圧縮", "HEIC圧縮", "WEBP圧縮",
     "無料画像容量削減", "画像クオリティ調整", "画像最適化", "文書キング"

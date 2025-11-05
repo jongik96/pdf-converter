@@ -2,7 +2,7 @@ import ClientComponent from "./ClientComponent";
 
 export const metadata = {
   title: "PDF結合 - 複数PDFを一度に結合 | ドキュメントキング",
-  description: "複数のPDFファイルを高速で1つに結合してください！最大5個、100MBまで無料で結合。インストール・会員登録なしですぐに利用可能。",
+  description: "複数のPDFファイルを高速で1つに結合してください！最大5個、100MBまで無料で結合。インストール・会員登録なしですぐに利用可能。複数のPDF文書を1つのファイルにまとめて、整理・保存・共有を簡単に。ビジネス、教育、個人用途に最適な無料PDF結合ツールです。",
   keywords: [
     "PDF結合", "PDF結合", "複数PDF一ファイル", "無料PDF結合", "PDF Merge", "ドキュメントキング"
   ],

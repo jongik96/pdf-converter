@@ -233,6 +233,41 @@ export default function PdfSplitPage() {
             </CardContent>
           </Card>
         </div>
+
+        {/* 상세 설명 섹션 */}
+        <div className="max-w-4xl mx-auto mt-16 px-4 space-y-8">
+          <section className="bg-white rounded-2xl p-8 shadow-lg">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">PDF分割とは？</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              PDF分割は、大きなPDFファイルを複数の小さなPDFファイルに分割する機能です。特定のページ範囲を指定して、必要な部分だけを別々のPDFとして保存できます。例えば、1-3ページ、5ページ、7-10ページのように柔軟に分割できます。
+            </p>
+            <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">PDF分割の使い方</h3>
+            <ol className="space-y-2 text-gray-700 list-decimal list-inside">
+              <li>PDFファイルをアップロードします</li>
+              <li>分割したいページ範囲を指定します（例: 1-3,5,7-10）</li>
+              <li>分割ボタンをクリックします</li>
+              <li>分割されたPDFファイルをZIP形式でダウンロードします</li>
+            </ol>
+          </section>
+
+          <section className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 shadow-lg">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">よくある質問</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Q. 複数の範囲を一度に分割できますか？</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  はい、カンマで区切って複数の範囲を指定できます。例: 1-3,5,7-10 のように入力すると、3つのPDFファイルが作成されます。
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Q. 分割されたファイルはどうなりますか？</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  分割されたすべてのPDFファイルはZIP形式で1つのファイルとしてダウンロードされます。ZIPファイルを解凍すると、個別のPDFファイルを確認できます。
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   );

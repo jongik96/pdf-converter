@@ -2,7 +2,7 @@ import ClientComponent from "./ClientComponent";
 
 export const metadata = {
   title: "画像サイズ調整 - JPG、PNG、HEIC、WEBP無料リサイズ | 文書キング",
-  description: "画像サイズを自由に調整してください！JPG、PNG、WEBP、HEICなど多様な形式対応、完全無料。アスペクト比維持、高品質画像リサイズ、文書キングで高速で簡単に！",
+  description: "画像サイズを自由に調整してください！JPG、PNG、WEBP、HEICなど多様な形式対応、完全無料。アスペクト比維持、高品質画像リサイズ、文書キングで高速で簡単に！SNS投稿用、ウェブサイト用、メール送信用など用途に合わせて画像サイズを調整できます。スマートフォンでも簡単に使用可能な無料画像リサイズツールです。",
   keywords: [
     "画像リサイズ", "画像サイズ調整", "JPGリサイズ", "PNGリサイズ", "HEICリサイズ", "WEBPリサイズ",
     "無料画像サイズ変更", "画像サイズ変更", "画像最適化", "文書キング"

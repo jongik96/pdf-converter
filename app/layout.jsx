@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "PDFer - 無料ファイル変換機",
-  description: "PDFerでPDF、Word、Excel、PowerPoint、画像ファイルを簡単で高速に無料で変換してください。インストール・会員登録なしで完全無料！国内サーバーを運営しているため、どこよりも高速な速度を楽しめます！",
+  description: "PDFerでPDF、Word、Excel、PowerPoint、画像ファイルを簡単で高速に無料で変換してください。インストール・会員登録なしで完全無料！国内サーバーを運営しているため、どこよりも高速な速度を楽しめます！PDF変換、Word変換、Excel変換、画像変換、PDF結合・分割・圧縮など20以上の無料ツールを提供。ビジネス、教育、個人用途に最適なオンラインファイル変換サービスです。",
   keywords: [
     "PDFer", "ファイル変換", "PDF変換", "画像変換", "文書変換機", "ウェブ変換ツール", "jpg png heic pdf xlsx ppt"
   ],
